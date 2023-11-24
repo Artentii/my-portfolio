@@ -8,12 +8,40 @@
   --background-end-rgb: 255, 255, 255;
   --antiqueWhite: #FFF7EE;
   --cadmiumOrange: #EA832F;
+  --dandelion: #FCDA70;
+  --razzmataz: #E52573;
 
   /* borders */
   --borderCardService: 2px solid #F7E8D5;
 
   /* shadows */
   --shadowCardService: 1px 1px 4px 0px rgba(49, 58, 65, 0.50);
+}
+
+/* COLORS CLASSES */
+.bg-antiqueWhite{
+  background-color: var(--antiqueWhite)
+}
+.color-antiqueWhite{
+  color: var(--antiqueWhite)
+}
+.bg-cadmiumOrange{
+  background-color: var(--cadmiumOrange)
+}
+.color-cadmiumOrange{
+  color: var(--cadmiumOrange)
+}
+.bg-dandelion{
+  background-color: var(--dandelion)
+}
+.color-dandelion{
+  color: var(--dandelion)
+}
+.bg-razzmataz{
+  background-color: var(--razzmataz)
+}
+.color-razzmataz{
+  color: var(--razzmataz)
 }
 
 @media (prefers-color-scheme: dark) {
