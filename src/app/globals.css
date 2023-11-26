@@ -10,6 +10,9 @@
   --cadmiumOrange: #EA832F;
   --dandelion: #FCDA70;
   --razzmataz: #E52573;
+  --lavanderPink: #FFB5D0;
+  --eggBlue: #8BE3D3;
+  --bgOrangeServices: #FFDABB;
 
   /* borders */
   --borderCardService: 2px solid #F7E8D5;
@@ -42,6 +45,18 @@
 }
 .color-razzmataz{
   color: var(--razzmataz)
+}
+.bg-lavanderPink{
+  background-color: var(--lavanderPink)
+}
+.color-lavanderPink{
+  color: var(--lavanderPink)
+}
+.bg-eggBlue{
+  background-color: var(--eggBlue)
+}
+.color-eggBlue{
+  color: var(--eggBlue)
 }
 
 @media (prefers-color-scheme: dark) {
