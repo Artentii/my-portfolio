@@ -6,6 +6,65 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --antiqueWhite: #fff7ee;
+  --cadmiumOrange: #ea832f;
+  --dandelion: #fcda70;
+  --razzmataz: #e52573;
+  --lavanderPink: #ffb5d0;
+  --eggBlue: #8be3d3;
+  --bgOrangeServices: #ffdabb;
+  --textGrey: #4d5358;
+  --backgroundPage: #FFFCF7;
+
+  /* borders */
+  --borderCardService: 2px solid #f7e8d5;
+
+  /* shadows */
+  --shadowCard: 6px 6px var(--cadmiumOrange);
+}
+
+/* COLORS CLASSES */
+.bg-antiqueWhite {
+  background-color: var(--antiqueWhite);
+}
+.color-antiqueWhite {
+  color: var(--antiqueWhite);
+}
+.bg-cadmiumOrange {
+  background-color: var(--cadmiumOrange);
+}
+.color-cadmiumOrange {
+  color: var(--cadmiumOrange);
+}
+.bg-dandelion {
+  background-color: var(--dandelion);
+}
+.color-dandelion {
+  color: var(--dandelion);
+}
+.bg-razzmataz {
+  background-color: var(--razzmataz);
+}
+.color-razzmataz {
+  color: var(--razzmataz);
+}
+.bg-lavanderPink {
+  background-color: var(--lavanderPink);
+}
+.color-lavanderPink {
+  color: var(--lavanderPink);
+}
+.bg-eggBlue {
+  background-color: var(--eggBlue);
+}
+.color-eggBlue {
+  color: var(--eggBlue);
+}
+.text-Gray{
+  color: var(--textGrey)
+}
+.bg-Page{
+  background: var(--backgroundPage)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +77,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
