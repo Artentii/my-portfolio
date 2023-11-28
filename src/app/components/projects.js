@@ -38,14 +38,14 @@ const addNewProjectCategory = [
 export default function Projects() {
   return (
     <div className="">
-      <h3 className="text-6xl font-semibold text-center color-razzmataz">Projects</h3>
+      <h3 className="text-6xl font-semibold text-center text-razzmataz">Projects</h3>
       {/* Quote container */}
       <div className="pt-10">
-        <div className="py-10 bg-lightLavanderPink">
+        <div className="py-10 bg-light-lavander-pink">
           {/* <div className="relative inset-0 overflow-hidden">
             <Image src="/stickers.png" className="z-50 absolute object-cover opacity-80" width={350} height={350} alt="blabla" priority />
           </div> */}
-          <div className="flex flex-col items-end justify-center w-10/12 lg:w-1/2 mx-auto gap-4 color-razzmataz">
+          <div className="flex flex-col items-end justify-center w-10/12 lg:w-1/2 mx-auto gap-4 text-razzmataz">
             <p className="text-2xl lg:text-4xl ">
               &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
             </p>
@@ -57,16 +57,16 @@ export default function Projects() {
       {/* List of projects */}
       <div className="pt-10 px-10 flex flex-col items-center justify-center lg:flex-row lg:flex-wrap ">
         {addNewProjectCategory.map((card, index) => (
-          <div className="flex flex-col rounded-xl m-2 lg:w-5/12 bg-antiqueWhite" key={index} style={{ border: "var(--borderCardProject)", boxShadow: "var(--shadowCardProject)" }}>
-            <div className="flex flex-row justify-start gap-6 border-[#ffb5d0] border-b-[4px]">
-              <span className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 border-[#ffb5d0] border-r-[4px] color-razzmataz ">{card.number}</span>
-              <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 color-razzmataz">{card.category}</p>
+          <div className="flex flex-col rounded-xl m-2 lg:w-5/12 bg-antique-white border-4 border-lavander-pink shadow-project-card" key={index} >
+            <div className="flex flex-row justify-start gap-6 border-lavander-pink border-b-[4px]">
+              <span className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 border-lavander-pink border-r-[4px] text-razzmataz ">{card.number}</span>
+              <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 text-razzmataz">{card.category}</p>
             </div>
             <div className="flex flex-col items-center p-6">
               <Image src={card.imgUrl} alt={card.textAlt} width={180} height={180} priority />
               <div className="flex flex-col justify-center items-center gap-2">
-                <p className="text-Gray text-center p-4">{card.text}</p>
-                <span className="color-antiqueWhite text-lg bg-razzmataz lg:hover:bg-[#ffb5d0] lg:hover:text-[#e52573] cursor-pointer transition-all duration-300 ease-in-out px-6 py-3 rounded-full">
+                <p className="text-gray text-center p-4">{card.text}</p>
+                <span className="text-antique-white text-lg bg-razzmataz lg:hover:bg-lavander-pink lg:hover:text-razzmataz cursor-pointer transition-all duration-300 ease-in-out px-6 py-3 rounded-full">
                   {card.button}
                 </span>
               </div>

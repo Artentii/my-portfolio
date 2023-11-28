@@ -6,7 +6,7 @@ import Projects from '../../src/app/components/projects'
 
 export default function Home() {
   return (
-    <main className="bg-Page">
+    <main className="bg-page">
       <Services/>
       <Projects/>
     </main>
