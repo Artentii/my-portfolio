@@ -5,7 +5,7 @@ import Services from '../../src/app/components/services'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="bg-Page">
       <Services/>
     </main>
   )
