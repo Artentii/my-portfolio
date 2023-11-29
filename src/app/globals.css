@@ -11,6 +11,7 @@
   --dandelion: #fcda70;
   --razzmataz: #e52573;
   --lavanderPink: #ffb5d0;
+  --lightLavanderPink: #FFE0EB;
   --eggBlue: #8be3d3;
   --bgOrangeServices: #ffdabb;
   --textGrey: #4d5358;
@@ -18,9 +19,12 @@
 
   /* borders */
   --borderCardService: 2px solid #f7e8d5;
+  --borderCardProject: 4px solid var(--lavanderPink);
+  --borderCardProjectTitle: 0px 4px 0px 0px solid var(--lavanderPink);
 
   /* shadows */
   --shadowCard: 6px 6px var(--cadmiumOrange);
+  --shadowCardProject: 6px 6px var(--razzmataz);
 }
 
 /* COLORS CLASSES */
@@ -54,6 +58,12 @@
 .color-lavanderPink {
   color: var(--lavanderPink);
 }
+.bg-lightLavanderPink {
+  background-color: var(--lightLavanderPink);
+}
+.color-lightLavanderPink {
+  color: var(--lightLavanderPink);
+}
 .bg-eggBlue {
   background-color: var(--eggBlue);
 }
@@ -63,9 +73,9 @@
 .text-Gray{
   color: var(--textGrey)
 }
-.bg-Page{
+/* .bg-Page{
   background: var(--backgroundPage)
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -76,6 +86,5 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: var(--backgroundPage);
 }
