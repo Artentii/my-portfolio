@@ -21,6 +21,7 @@ module.exports = {
       },
       boxShadow: {
         'service-card': '6px 6px #ea832f',
+        'tool-card': '4px 4px #e52573',
         'project-card': '6px 6px #e52573'
       }
     },

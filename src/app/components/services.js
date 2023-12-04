@@ -69,7 +69,7 @@ export default function Services() {
       {/* The steps in my creative process are...  */}
       <div className="relative flex flex-col p-10">
         <p className="text-xl lg:text-3xl font-regular pb-6 text-cadmium-orange">The steps in my creative process are...</p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 rounded-md text-Gray bg-cadmium-orange shadow-service-card">
+        <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 rounded-md text-gray bg-cadmium-orange shadow-service-card border-cadmium-orange border-2">
           <div className="col-span-2 lg:col-span-1 bg-antique-white flex flex-col justify-center items-center rounded-t-md lg:rounded-tl-md lg:rounded-tr-none">
             <div className="my-10">
               <p className="font-bold text-lg pb-2 text-cadmium-orange">1. Research and discovery</p>
@@ -132,7 +132,7 @@ export default function Services() {
               <span className="text-lg text-gray">As a UX Engineer</span>
               <div className="flex flex-wrap justify-center">
                 {addWebDeveloperTool.map((item, index) => (
-                  <span className="py-3 px-4 w-[180px] rounded-full text-center mx-1 my-4 text-xl font-light text-razzmataz bg-dandelion" key={index}>
+                  <span className="py-3 px-4 w-[180px] rounded-xl text-center mx-1 my-4 text-xl font-light text-razzmataz border-2 shadow-tool-card" key={index}>
                     {item}
                   </span>
                 ))}
@@ -143,7 +143,7 @@ export default function Services() {
               <span className="text-lg text-gray">As a Graphic Designer</span>
               <div className="flex flex-wrap items-center justify-center">
                 {addGraphicDesignerTool.map((item, index) => (
-                  <span className="py-3 px-4 w-[250px] rounded-full text-center mx-1 my-4 text-xl font-light text-razzmataz bg-dandelion" key={index}>
+                  <span className="py-3 px-4 w-[250px] rounded-xl text-center mx-1 my-4 text-xl font-light text-razzmataz border-2 shadow-tool-card" key={index}>
                     {item}
                   </span>
                 ))}
@@ -161,7 +161,7 @@ export default function Services() {
         </p>
         <div className="flex flex-col lg:flex-row mx-auto">
           {addDigitalPresenceCards.map((card, index) => (
-            <div className="my-2 lg:mx-2 lg:w-2/6 p-4 rounded-xl bg-antique-white border-2 border-light-cadmium-orange shadow-service-card" key={index}>
+            <div className="my-2 lg:mx-2 lg:w-2/6 p-4 rounded-xl bg-antique-white border-2 border-cadmium-orange shadow-service-card" key={index}>
               <Image src={card.imgUrl} alt={card.textAlt} className="mx-auto" width={180} height={100} priority />
               <p className="text-2xl font-semibold py-2 text-center text-cadmium-orange">{card.title}</p>
               <p className="text-gray text-center">{card.text}</p>
