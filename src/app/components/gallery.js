@@ -39,10 +39,10 @@ export default function Gallery() {
     <div className="py-5">
       <div className="grid grid-cols-2 grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-6 ">
         <div className="col-span-1 row-span-1 relative h-60 lg:h-[32rem]">
-          <Image src={getRandomImgLeft()} className="rounded-xl object-cover w-full h-full" alt="blabla" priority />
+          <Image src={getRandomImgLeft()} className="rounded-xl object-cover w-full h-full shadow-image-card" alt="blabla" priority />
         </div>
         <div className="col-span-1 row-span- lg:col-span-2 relative h-60 lg:h-[32rem]">
-          <Image src={getRandomImgRight()} className="rounded-xl object-cover w-full h-full" alt="blabla" priority />
+          <Image src={getRandomImgRight()} className="rounded-xl object-cover w-full h-full shadow-image-card" alt="blabla" priority />
         </div>
       </div>
     </div>

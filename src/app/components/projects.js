@@ -57,7 +57,7 @@ export default function Projects() {
       {/* List of projects */}
       <div className="pt-10 px-10 flex flex-col items-center justify-center lg:flex-row lg:flex-wrap ">
         {addNewProjectCategory.map((card, index) => (
-          <div className="flex flex-col rounded-xl m-2 lg:w-5/12 bg-antique-white border-4 border-lavander-pink shadow-project-card" key={index} >
+          <div className="flex flex-col rounded-xl m-2 lg:w-5/12 bg-light-lavander-pink border-4 border-lavander-pink shadow-project-card" key={index} >
             <div className="flex flex-row justify-start gap-6 border-lavander-pink border-b-[4px]">
               <span className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 border-lavander-pink border-r-[4px] text-razzmataz ">{card.number}</span>
               <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 text-razzmataz">{card.category}</p>
@@ -66,7 +66,7 @@ export default function Projects() {
               <Image src={card.imgUrl} alt={card.textAlt} width={180} height={180} priority />
               <div className="flex flex-col justify-center items-center gap-2">
                 <p className="text-gray text-center p-4">{card.text}</p>
-                <span className="text-antique-white text-lg bg-razzmataz lg:hover:bg-lavander-pink lg:hover:text-razzmataz cursor-pointer transition-all duration-300 ease-in-out px-6 py-3 rounded-full">
+                <span className="text-razzmataz text-lg bg-lavander-pink shadow-button lg:hover:translate-y-1 cursor-pointer transition-all duration-300 ease-in-out px-6 py-3 rounded-full">
                   {card.button}
                 </span>
               </div>
