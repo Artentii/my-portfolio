@@ -28,7 +28,7 @@ const addSocialNetwork = [
 
 export default function About() {
   return (
-    <div className="pt-5 lg:pt-10">
+    <div className="py-5 lg:py-10 mt-0 lg:mt-10 bg-antique-white">
       <h3 className="text-6xl font-semibold text-center text-razzmataz">About</h3>
       {/* About me information */}
       <div className=" flex flex-col items-start justify-center rounded-t-full bg-antique-white lg:bg-transparent p-10 lg:py-0 px-10">
@@ -71,8 +71,8 @@ export default function About() {
       </div>
 
       {/* When I'm not at work */}
-      <div className="pt-5 lg:pt-0 px-10 lg:px-0 lg:w-3/4 mx-auto ">
-        <p className="text-2xl lg:text-4xl font-semibold text-lavander-pink">When I&apos;m not at work...</p>
+      <div className="pt-5 lg:pt-0 px-10 lg:px-0 lg:w-3/4 mx-auto">
+        <p className="text-2xl lg:text-4xl font-semibold text-razzmataz">When I&apos;m not at work...</p>
         <Gallery />
       </div>
     </div>
