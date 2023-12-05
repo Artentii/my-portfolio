@@ -55,7 +55,7 @@ const addDigitalPresenceCards = [
 
 export default function Services() {
   return (
-    <div className="py-10">
+    <div className="pb-10">
       <h3 className="text-6xl font-semibold text-center text-razzmataz">Services</h3>
       {/* List of services I offer */}
       <div className="flex flex-wrap gap-4 lg:gap-10 justify-center p-10">
