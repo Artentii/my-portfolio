@@ -8,6 +8,7 @@ import Footer from "./components/footer"
 export default function Home() {
   return (
     <main className="bg-pale-page">
+      <div className="noise"></div>
       <Services />
       <Projects />
       <About />
