@@ -28,7 +28,10 @@ module.exports = {
         "image-card": "4px 4px #ffb5d0",
         button: "3px 3px #e52573",
         "button-two": "6px 6px #e52573",
-      }
+        "button-job-s": "4px 4px #ffb5d0",
+        "button-job": "6px 6px #ffb5d0",
+        "button-job-active": "8px 8px #ffb5d0",
+      },
     },
   },
   plugins: [],
