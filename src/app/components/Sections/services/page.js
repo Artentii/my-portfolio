@@ -55,12 +55,15 @@ const addDigitalPresenceCards = [
 
 export default function Services() {
   return (
-    <div className="pb-10">
+    <div className="pb-10" id="services">
       <h3 className="text-6xl font-semibold text-center text-razzmataz">Services</h3>
       {/* List of services I offer */}
       <div className="flex flex-wrap gap-4 lg:gap-10 justify-center p-10">
         {addServiceLink.map((card, index) => (
-          <div className="flex flex-row items-center decoration-transparent lg:hover:underline hover:decoration-razzmataz hover:underline-offset-8 cursor-pointer transition-all duration-300 ease-in-out" key={index}>
+          <div
+            className="flex flex-row items-center decoration-transparent lg:hover:underline hover:decoration-razzmataz hover:underline-offset-8 cursor-pointer transition-all duration-300 ease-in-out"
+            key={index}
+          >
             <span className="text-lg lg:text-2xl text-razzmataz">{card.title}</span>
             <Image src={card.imgUrl} alt={card.textAlt} width={30} height={30} priority />
           </div>
@@ -116,7 +119,9 @@ export default function Services() {
                 <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z" />
                 <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
               </svg>
-              <p className="text-[16px]">I will provide you with a Notion client portal to track the project. Additionally, you’ll have documentation with the brand strategy and brand presentation.</p>
+              <p className="text-[16px]">
+                I will provide you with a Notion client portal to track the project. Additionally, you’ll have documentation with the brand strategy and brand presentation.
+              </p>
             </div>
           </div>
         </div>

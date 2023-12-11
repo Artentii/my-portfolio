@@ -35,9 +35,9 @@ export default function LatestProjects() {
           <h3 className="z-40 absolute text-3xl text-razzmataz font-semibold">Latest projects</h3>
           <div className="flex flex-col lg:flex-row my-14 pt-20 gap-4">
             {addInformationCard.map((card, index) => (
-              <div key={index} className="cursor-pointer relative group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40">
+              <div key={index} className="cursor-pointer relative group lg:hover:scale-110 3xl:hover:scale-125 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40">
                 <Image className="object-cover rounded-md" src={card.imgUrl} alt={card.textAlt} width={400} height={400} />
-                <div className="absolute rounded-md p-10 inset-0 hidden lg:hover:bg-antique-white lg:hover:bg-opacity-80 transition-all duration-300 ease-in-out lg:group-hover:flex flex-col items-start gap-4">
+                <div className="absolute rounded-md p-10 inset-0 hidden lg:hover:bg-white lg:hover:bg-opacity-80 transition-all duration-300 ease-in-out lg:group-hover:flex flex-col items-start gap-4">
                   <span className="uppercase font-normal text-razzmataz  ">{card.category}</span>
                   <span className="font-semibold text-gray text-4xl">{card.title}</span>
                   <button className="px-8 py-2 bg-razzmataz text-antique-white rounded-full lg:hover:bg-lavander-pink lg:hover:text-razzmataz transition-all duration-300 ease-in-out">

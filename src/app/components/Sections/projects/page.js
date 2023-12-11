@@ -37,7 +37,7 @@ const addNewProjectCategory = [
 
 export default function Projects() {
   return (
-    <div className="">
+    <div id="projects">
       <h3 className="text-6xl font-semibold text-center text-razzmataz">Projects</h3>
       {/* Quote container */}
       <div className="pt-10">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // Components
-import Gallery from "../components/gallery";
+import Gallery from "../../gallery";
 
 const addSocialNetwork = [
   {
@@ -28,7 +28,7 @@ const addSocialNetwork = [
 
 export default function About() {
   return (
-    <div className="py-5 lg:py-10 mt-0 lg:mt-10 bg-antique-white">
+    <div className="py-5 lg:py-10 mt-0 lg:mt-10 bg-antique-white" id="about">
       <h3 className="text-6xl font-semibold text-center text-razzmataz">About</h3>
       {/* About me information */}
       <div className=" flex flex-col items-start justify-center rounded-t-full bg-antique-white lg:bg-transparent p-10 lg:py-0 px-10">
