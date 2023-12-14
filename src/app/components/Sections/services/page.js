@@ -64,7 +64,7 @@ export default function Services() {
       <div className="flex flex-wrap gap-4 lg:gap-10 justify-center pt-10 px-10">
         {addServiceLink.map((card, index) => (
           <div
-            className="flex flex-row items-center decoration-transparent lg:hover:underline hover:decoration-gray-light hover:underline-offset-8 cursor-pointer transition-all duration-300 ease-in-out"
+            className="flex flex-row items-center decoration-transparent lg:hover:underline hover:decoration-gray-light  hover:underline-offset-8 cursor-pointer transition-all duration-300 ease-in-out"
             key={index}
           >
             <span className="text-lg lg:text-2xl text-gray-light">{card.title}</span>
