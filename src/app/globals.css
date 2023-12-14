@@ -40,6 +40,21 @@ body {
   pointer-events: none;
 }
 
+.word-deco {
+  background-image: url('/deco/line.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: .25rem 0rem;
+}
+
+.word-deco-primary {
+  background-image: url('/deco/line_primary.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: .25rem 0rem;
+}
 @keyframes grain {
   0% {
     transform: translate(0, 0);
