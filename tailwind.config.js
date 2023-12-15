@@ -25,6 +25,7 @@ module.exports = {
         "tool-card": "4px 4px #C497EA",
         "project-card": "6px 6px #E9CDFF",
         "image-card": "4px 4px #ffb5d0",
+        section: "3px 3px #E9CDFF",
       },
       screens: {
         "3xl": "1920px",
@@ -32,7 +33,7 @@ module.exports = {
       animation: {
         wiggle: "wiggle 2.5s ease-in-out infinite",
         arrow: "arrow 2s ease-in-out infinite",
-        heart: "heart 2s ease-in-out infinite",
+        heart: "heart 3s ease-in-out infinite",
         float: "float 4s ease-in-out infinite",
         tail: "tail .5s infinite",
         swing: "swing 2s ease-in-out infinite",
@@ -73,6 +74,9 @@ module.exports = {
           },
         },
         light: { "0%, 100%": { opacity: "50%" }, "50%": { opacity: "100%" } },
+      },
+      borderRadius: {
+        large: "50px",
       },
     },
   },
