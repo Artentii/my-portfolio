@@ -10,14 +10,13 @@ const sections = [
     route: "/#services",
   },
   {
-    name: "FAQs",
-    route: "/#FAQs",
-  },
-  {
     name: "Projects",
     route: "/#projects",
   },
-
+  {
+    name: "FAQs",
+    route: "/#FAQs",
+  },
   {
     name: "About",
     route: "/#about",

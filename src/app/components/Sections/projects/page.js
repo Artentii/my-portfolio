@@ -4,7 +4,7 @@ const addNewProjectCategory = [
   {
     number: "[01]",
     category: "Web Design",
-    imgUrl: "/project_one.png",
+    imgUrl: "/projects/web-design.gif",
     textAlt: "Image one",
     text: "Crafting visually appealing, user-friendly websites transforms your vision into a compelling online presence. Whether revitalizing an existing site or starting anew, I bring ideas to life.",
     button: "See Projects",
@@ -12,7 +12,7 @@ const addNewProjectCategory = [
   {
     number: "[02]",
     category: "Graphic Design",
-    imgUrl: "/project_two.png",
+    imgUrl: "/projects/graphic-design.gif",
     textAlt: "Image one",
     text: "Each project is unique; I collaborate closely with clients to realize their visions. My aim is to ensure your brand looks its best, whether launching or refreshing its visual identity.",
     button: "See Projects",
@@ -20,7 +20,7 @@ const addNewProjectCategory = [
   {
     number: "[03]",
     category: "Merchandising",
-    imgUrl: "/project_three.png",
+    imgUrl: "/projects/shop.gif",
     textAlt: "Image one",
     text: "From custom apparel with your logo to branded merchandise reflecting your unique identity, I'm here to help you make a statement. My designs enhance brand recognition and engage your target audience.",
     button: "See Projects",
@@ -28,7 +28,7 @@ const addNewProjectCategory = [
   {
     number: "[04]",
     category: "Art Gallery",
-    imgUrl: "/project_four.png",
+    imgUrl: "/projects/art-gallery.gif",
     textAlt: "Image one",
     text: "This section reflects my profound passion for the arts in all forms. Featuring various artistic styles, from abstract to realistic, it's a space where creativity knows no limits and art knows no boundaries.",
     button: "See Projects",
@@ -63,7 +63,7 @@ export default function Projects() {
               <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 text-gray-light">{card.category}</p>
             </div>
             <div className="flex flex-col items-center p-6">
-              <Image src={card.imgUrl} alt={card.textAlt} width={180} height={180} priority />
+              <Image src={card.imgUrl} alt={card.textAlt} width={150} height={150} priority />
               <div className="flex flex-col justify-center items-center gap-2">
                 <p className="text-center p-4 text-gray-light">{card.text}</p>
                 <span className="text-light text-lg bg-primary-color hover:-translate-y-1 shadow-button hover:bg-primary-color-dark hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-12 py-3 rounded-lg">

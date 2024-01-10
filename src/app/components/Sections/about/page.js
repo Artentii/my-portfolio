@@ -35,7 +35,7 @@ export default function About() {
         <div className="flex flex-col items-center justify-center">
           {/* Content top */}
           <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-20 ">
-            <Image src="/headshot.jpg" className="rounded-t-full" width={350} height={350} alt="blabla" priority />
+            <Image src="/services/creative_process.png" alt="Girl with a brush" width={500} height={300} priority className="" />
             <div className="flex flex-col justify-center items-start lg:w-1/2">
               <div className="flex flex-col items-start gap-2">
                 <div>

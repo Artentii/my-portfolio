@@ -3,39 +3,39 @@ import Image from "next/image";
 const addServiceLink = [
   {
     title: "Brand Identity",
-    imgUrl: "/service.jpg",
+    imgUrl: "/services/service_brand.png",
     textAlt: "Image 1",
-    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Design systems", "• Framer Development"],
+    text: ["• Logotype", "• Voice and tone", "• Color scheme", "• Packaging", "• Typography", "•Imagery"],
   },
   {
     title: "Logo Design",
-    imgUrl: "/service.jpg",
+    imgUrl: "/services/service_logo.png",
     textAlt: "Image 1",
-    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Design systems", "• Framer Development"],
+    text: ["• Logotype", "• Wordmark", "• Favicon"],
   },
   {
     title: "Web Design",
-    imgUrl: "/service.jpg",
+    imgUrl: "/services/service_design.png",
     textAlt: "Image 1",
-    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Design systems", "• Framer Development"],
+    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Responsive Design"],
   },
   {
     title: "Web Development",
-    imgUrl: "/service.jpg",
+    imgUrl: "/services/service_web.png",
     textAlt: "Image 1",
-    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Design systems", "• Framer Development"],
-  },
-  {
-    title: "Physical Art",
-    imgUrl: "/service.jpg",
-    textAlt: "Image 1",
-    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Design systems", "• Framer Development"],
+    text: ["• Website Implementation", "• Coding", "• Layout Sections", "• Testing", "• Maintenance"],
   },
   {
     title: "Illustration",
-    imgUrl: "/service.jpg",
+    imgUrl: "/services/service_illustration.png",
     textAlt: "Image 1",
-    text: ["• Website", "• Landing Page Design", "• Wireframes", "• Design systems", "• Framer Development"],
+    text: ["• Illustrated Icons", "• Character Design"],
+  },
+  {
+    title: "Physical Art",
+    imgUrl: "/services/service_art.png",
+    textAlt: "Image 1",
+    text: ["• Fluid Art", "• Acrylic", "• Watercolor", "• Textile", "• Abstract Art", "• Framing", "• Resin Art"],
   },
 ];
 
@@ -45,22 +45,22 @@ const addGraphicDesignerTool = ["Adobe Creative Cloud", "Midjourney", "Notion", 
 
 const addDigitalPresenceCards = [
   {
-    imgUrl: "/services_first.png",
+    imgUrl: "/services/first-impression.gif",
     textAlt: "Image one",
     title: "Creating a great first impression",
-    text: "A captivating digital presence is the initial point of contact with your audience. As a UX engineer I’ll ensure a user-friendly and intuitive experience.",
+    text: "A captivating digital presence is the initial point of contact with your audience. As a Web Designer I’ll ensure a user-friendly and intuitive experience.",
   },
   {
-    imgUrl: "/services_second.png",
+    imgUrl: "/services/stay-true.gif",
     textAlt: "Image two",
     title: "Staying true to your brand",
     text: "By maintaining brand consistency, reinforcing your identity across digital touchpoints through visuals, creating trust and recognition.",
   },
   {
-    imgUrl: "/services_third.png",
+    imgUrl: "/services/outshine-competition.gif",
     textAlt: "Image three",
     title: "Outshining the competition online",
-    text: " A well-designed and user-centric digital presence sets you apart from competitors, while also improving search engine visibility, helping your business thrive in the digital landscape.",
+    text: " A well-designed digital presence sets you apart from competitors, while also improving search engine visibility, helping your business thrive in the digital landscape.",
   },
 ];
 
@@ -74,13 +74,15 @@ export default function Services() {
       </div>
 
       <div className="py-10">
-        <h3 className="text-8xl font-semibold text-center text-primary-color w-3/4 mx-auto">Designing the visual, coding the <span className="word-deco-primary">functional</span>.</h3>
+        <h3 className="text-8xl font-semibold text-center text-primary-color w-3/4 mx-auto">
+          Designing the visual, coding the <span className="word-deco-primary">functional</span>.
+        </h3>
 
         {/* List of services I offer */}
         <div className="flex flex-wrap gap-4 lg:gap-10 justify-center pt-20">
           {addServiceLink.map((card, index) => (
             <div className="w-96" key={index}>
-              <Image className="rounded-xl" src={card.imgUrl} alt={card.textAlt} width={400} height={400} priority />
+              <Image className="rounded-xl shadow-tool-card border-2 border-primary-color bg-primary-color-light" src={card.imgUrl} alt={card.textAlt} width={400} height={400} priority />
               <div className="flex flex-col items-start gap-3 py-3">
                 <span className="text-lg lg:text-2xl font-semibold text-primary-color">{card.title}</span>
                 <span className="flex flex-wrap gap-x-5">
@@ -95,12 +97,33 @@ export default function Services() {
           ))}
         </div>
 
+        {/* Elevate your digital presence */}
+
+        <div className="pt-10">
+          <h4 className="text-xl lg:text-4xl font-regular text-gray-normal text-center">
+            Elevate your <span className="word-deco">digital presence</span>
+          </h4>
+          <p className="lg:text-md lg:w-2/3 py-10 lg:text-lg text-center text-gray-light mx-auto">
+            Your digital presence serves as the digital storefront, the first point of contact for your audience. It&apos;s the online space where potential customers and visitors get their first
+            glimpse of your brand, products, or services. These features will help you achieving a remarkable digital presence.
+          </p>
+          <div className="flex flex-col gap-4 lg:flex-row mx-auto">
+            {addDigitalPresenceCards.map((card, index) => (
+              <div className="my-2 lg:w-2/6 py-4 px-8 rounded-xl border-2 border-primary-color bg-white/80 shadow-service-card" key={index}>
+                <Image src={card.imgUrl} alt={card.textAlt} className="mx-auto py-2" width={150} height={125} priority />
+                <p className="text-2xl font-semibold pb-2 text-gray-normal">{card.title}</p>
+                <p className="text-gray-light">{card.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* The steps in my creative process are...  */}
         <div className="relative flex flex-col">
           <p className="text-xl lg:text-4xl py-10 font-regular text-center mx-auto text-gray-normal">
             <span className="word-deco">Steps</span> in my creative process
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-primary-color-light rounded-md text-gray-light shadow-service-card border-2 border-primary-color">
+          <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-primary-color-light rounded-lg text-gray-light shadow-service-card border-2 border-primary-color">
             <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center rounded-t-md lg:rounded-tl-md lg:rounded-tr-none">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">1. Research and discovery</p>
@@ -121,7 +144,7 @@ export default function Services() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center lg:rounded-tr-md">
+            <div className="col-span-2 lg:col-span-1 lg:row-start-2 bg-white flex flex-col justify-center items-center lg:rounded-tr-md">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">3. Design Development</p>
                 <ul className="list-disc list-inside">
@@ -131,7 +154,7 @@ export default function Services() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-2 bg-white flex flex-col justify-center items-center lg:rounded-bl-md lg:rounded-br-none">
+            <div className="col-span-2 lg:col-span-1  lg:row-start-2 bg-white flex flex-col justify-center items-center lg:rounded-bl-md lg:rounded-br-none">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">4. Presentation and Documentation</p>
                 <ul className="list-disc list-inside">
@@ -141,7 +164,7 @@ export default function Services() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-1 bg-white rounded-b-md lg:rounded-br-md lg:rounded-bl-none flex items-center justify-center p-10 lg:px-20">
+            <div className="col-span-2 lg:col-start-3 lg:row-span-2 bg-white rounded-b-lg lg:rounded-br-lg lg:rounded-tr-lg lg:rounded-bl-none flex items-center justify-center p-10 lg:px-20">
               <div className="flex items-start justify-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2-square flex-shrink-0" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z" />
@@ -153,11 +176,11 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <Image src="/creative_process.png" alt="Girl with a brush" width={270} height={270} priority className="absolute top-96 hidden xl:block" />
         </div>
 
         {/* Tools I use to work */}
         <div className="py-10">
+          <Image className="absolute right-16 animate-float" src="/deco/stars_two.svg" alt="Bulb" width={100} height={120} />
           <h4 className="text-xl lg:text-4xl py-5 font-regular text-gray-normal text-center">
             <span className="word-deco">Tools</span> I use to work
           </h4>
@@ -186,28 +209,6 @@ export default function Services() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Elevate your digital presence */}
-        <Image className="absolute left-16 -rotate-12 animate-float" src="/deco/stars_two.svg" alt="Bulb" width={120} height={120} />
-        <Image className="absolute right-16 rotate-6 animate-float" src="/deco/cloud.svg" alt="Bulb" width={175} height={175} />
-        <div className="pt-10">
-          <h4 className="text-xl lg:text-4xl font-regular text-gray-normal text-center">
-            Elevate your <span className="word-deco">digital presence</span>
-          </h4>
-          <p className="lg:text-md lg:w-2/3 py-10 lg:text-lg text-center text-gray-light mx-auto">
-            Your digital presence serves as the digital storefront, the first point of contact for your audience. It&apos;s the online space where potential customers and visitors get their first
-            glimpse of your brand, products, or services. So, how can I help you in achieving a remarkable digital presence?
-          </p>
-          <div className="flex flex-col gap-4 lg:flex-row mx-auto">
-            {addDigitalPresenceCards.map((card, index) => (
-              <div className="my-2 lg:w-2/6 p-4 rounded-xl border-2 border-primary-color bg-white/80 shadow-service-card" key={index}>
-                <Image src={card.imgUrl} alt={card.textAlt} className="mx-auto" width={180} height={100} priority />
-                <p className="text-2xl font-semibold py-2 text-center text-gray-light">{card.title}</p>
-                <p className="text-gray-light text-center">{card.text}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
