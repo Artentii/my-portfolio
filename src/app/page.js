@@ -8,7 +8,7 @@ import LatestProjects from "./components/latestprojects";
 import Hero from ".";
 import NavBar from "./components/base/navbar";
 import FAQs from "./components/Sections/faqs/page";
-
+import Testimonials from "./components/Sections/testimonials/page"
 export default function Home() {
   return (
     <main className="bg-light">
@@ -16,6 +16,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <LatestProjects />
+      <Testimonials />
       <Services />
       <Projects />
       <FAQs />

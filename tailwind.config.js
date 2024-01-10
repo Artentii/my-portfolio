@@ -27,6 +27,9 @@ module.exports = {
         "image-card": "4px 4px #ffb5d0",
         section: "3px 3px #E9CDFF",
       },
+      dropShadow:{
+        testimonial: "4px 4px #C497EA"
+      },
       screens: {
         "3xl": "1920px",
       },
