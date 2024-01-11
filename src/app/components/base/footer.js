@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const addSocialNetworkItem = [
   { title: "Behance", URL: "https://www.behance.net/artentii" },
@@ -26,7 +27,9 @@ export default function Footer() {
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-around">
         {/* Left content */}
         <div className="flex flex-col items-start gap-2 lg:w-1/2">
-          <Image src="/logos/primarylogo.png" width="120" height="120" alt="3D laptop" priority />
+          <Link href="/">
+            <Image src="/logos/primarylogo.png" width="120" height="120" alt="3D laptop" priority />
+          </Link>
           <p className="text-gray lg:text-lg">UX Engineer and graphic designer turning ideas into user-friendly experiences that not only engage users but also enrich their lives in various ways.</p>
           <div className="flex flex-row items-center gap-2 text-razzmataz hover:underline hover:underline-offset-4 transition-none duration-300 ease-in-out">
             <span className="lg:text-lg">marinaterentiicebotari@gmail.com</span>
