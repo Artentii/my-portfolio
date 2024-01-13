@@ -40,7 +40,7 @@ body {
   pointer-events: none;
 }
 
-.word-deco {
+.word-deco-s {
   background-image: url('/deco/line.svg');
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -48,12 +48,12 @@ body {
   padding: .25rem 0rem;
 }
 
-.word-deco-primary {
-  background-image: url('/deco/line_primary.svg');
+.word-deco-l {
+  background-image: url('/deco/line.svg');
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: .6rem 0rem;
+  padding: 1.5rem 0rem;
 }
 @keyframes grain {
   0% {

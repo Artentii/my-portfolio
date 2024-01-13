@@ -41,7 +41,7 @@ const addServiceLink = [
 
 const addWebDeveloperTool = ["Figma", "HTML", "CSS", "Javascript", "Next.js", "Chat GPT"];
 
-const addGraphicDesignerTool = ["Adobe Creative Cloud", "Midjourney", "Notion", "Blender"];
+const addGraphicDesignerTool = ["Adobe Suite", "Midjourney", "Notion", "Blender"];
 
 const addDigitalPresenceCards = [
   {
@@ -66,25 +66,23 @@ const addDigitalPresenceCards = [
 
 export default function Services() {
   return (
-    <div className="px-10 pt-10 m-10 bg-white/70 rounded-large" id="services">
-      <Image className="absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={150} height={150} />
-
+    <div className="p-5 lg:p-10 m-5 lg:m-10 bg-white/70 rounded-md" id="services">
+      {/* <Image className="absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} /> */}
+      <Image className="absolute right-20 animate-float hidden lg:block" src="/deco/stars_two.svg" alt="Bulb" width={125} height={120} />
       <div className=" flex justify-center" id="services">
-        <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-12 py-2 border border-primary-color rounded-full font-normal">Services</h3>
+        <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal">Services</h3>
       </div>
 
-      <div className="py-10">
-        <h3 className="text-8xl font-semibold text-center text-primary-color w-3/4 mx-auto">
-          Designing the visual, coding the <span className="word-deco-primary">functional</span>.
-        </h3>
+      <div className="">
+        <h3 className="text-4xl lg:text-8xl font-semibold text-center text-primary-color lg:w-3/4 mx-auto py-5 lg:py-10">Designing the visual, coding the functional.</h3>
 
         {/* List of services I offer */}
-        <div className="flex flex-wrap gap-4 lg:gap-10 justify-center pt-20">
+        <div className="flex flex-wrap gap-4 lg:gap-10 justify-center">
           {addServiceLink.map((card, index) => (
-            <div className="w-96" key={index}>
-              <Image className="rounded-xl shadow-tool-card border-2 border-primary-color bg-primary-color-light" src={card.imgUrl} alt={card.textAlt} width={400} height={400} priority />
-              <div className="flex flex-col items-start gap-3 py-3">
-                <span className="text-lg lg:text-2xl font-semibold text-primary-color">{card.title}</span>
+            <div className="md:w-96 3xl:w-[30rem]" key={index}>
+              <Image className="rounded-md shadow-tool-card border-2 border-primary-color bg-primary-color-light" src={card.imgUrl} alt={card.textAlt} width={400} height={400} priority />
+              <div className="flex flex-col items-start gap-2 py-2">
+                <span className="text-lg lg:text-2xl font-medium text-primary-color">{card.title}</span>
                 <span className="flex flex-wrap gap-x-5">
                   {card.text.map((service, index) => (
                     <span className="flex text-gray-light" key={index}>
@@ -96,35 +94,39 @@ export default function Services() {
             </div>
           ))}
         </div>
+        <Image className="mx-auto hidden lg:block" src="/deco/divider.png" alt="Bulb" width={1400} height={100} />
+        <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
         {/* Elevate your digital presence */}
-
-        <div className="pt-10">
-          <h4 className="text-xl lg:text-4xl font-regular text-gray-normal text-center">
-            Elevate your <span className="word-deco">digital presence</span>
+        <div>
+          <h4 className="text-2xl lg:text-4xl text-gray-normal text-center">
+            Elevate your <span className="word-deco-s">digital presence</span>
           </h4>
-          <p className="lg:text-md lg:w-2/3 py-10 lg:text-lg text-center text-gray-light mx-auto">
+          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg text-center text-gray-light mx-auto">
             Your digital presence serves as the digital storefront, the first point of contact for your audience. It&apos;s the online space where potential customers and visitors get their first
             glimpse of your brand, products, or services. These features will help you achieving a remarkable digital presence.
           </p>
           <div className="flex flex-col gap-4 lg:flex-row mx-auto">
             {addDigitalPresenceCards.map((card, index) => (
-              <div className="my-2 lg:w-2/6 py-4 px-8 rounded-xl border-2 border-primary-color bg-white/80 shadow-service-card" key={index}>
+              <div className="my-1 lg:my-2 lg:w-2/6 py-4 px-4 lg:px-8 rounded-xl border-2 border-primary-color bg-white/80 shadow-service-card" key={index}>
                 <Image src={card.imgUrl} alt={card.textAlt} className="mx-auto py-2" width={150} height={125} priority />
-                <p className="text-2xl font-semibold pb-2 text-gray-normal">{card.title}</p>
+                <p className="text-xl lg:text-2xl font-semibold pb-2 text-gray-normal">{card.title}</p>
                 <p className="text-gray-light">{card.text}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* The steps in my creative process are...  */}
+        {/* Steps in my creative process are...  */}
+        <Image className="mx-auto hidden lg:block" src="/deco/divider.png" alt="Bulb" width={1400} height={100} />
+        <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
+
         <div className="relative flex flex-col">
-          <p className="text-xl lg:text-4xl py-10 font-regular text-center mx-auto text-gray-normal">
-            <span className="word-deco">Steps</span> in my creative process
+          <p className="text-2xl lg:text-4xl text-center mx-auto text-gray-normal pb-10 ">
+            Steps in my <span className="word-deco-s">creative process</span>
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-primary-color-light rounded-lg text-gray-light shadow-service-card border-2 border-primary-color">
-            <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center rounded-t-md lg:rounded-tl-md lg:rounded-tr-none">
+            <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center rounded-t-md lg:rounded-tl-md lg:rounded-tr-none p-5 lg:p-0 ">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">1. Research and discovery</p>
                 <ul className="list-disc list-inside">
@@ -134,7 +136,7 @@ export default function Services() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center">
+            <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center p-5 lg:p-0">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">2. Conceptualization and Ideation</p>
                 <ul className="list-disc list-inside">
@@ -144,7 +146,7 @@ export default function Services() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-1 lg:row-start-2 bg-white flex flex-col justify-center items-center lg:rounded-tr-md">
+            <div className="col-span-2 lg:col-span-1 lg:row-start-2 bg-white flex flex-col justify-center items-center lg:rounded-bl-md p-5 lg:p-0">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">3. Design Development</p>
                 <ul className="list-disc list-inside">
@@ -154,7 +156,7 @@ export default function Services() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-1  lg:row-start-2 bg-white flex flex-col justify-center items-center lg:rounded-bl-md lg:rounded-br-none">
+            <div className="col-span-2 lg:col-span-1  lg:row-start-2 bg-white flex flex-col justify-center items-center p-5 lg:p-0">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">4. Presentation and Documentation</p>
                 <ul className="list-disc list-inside">
@@ -178,34 +180,58 @@ export default function Services() {
           </div>
         </div>
 
+        {/* Quote container */}
+        <Image className="mx-auto hidden lg:block" src="/deco/divider.png" alt="Bulb" width={1400} height={100} />
+        <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
+
+        <div className="lg:pt-10 lg:pb-20 relative">
+          <div className="flex flex-col items-center justify-center 3xl:w-9/12 w-10/12 mx-auto gap-2 lg:gap-4 text-gray-normal">
+            <p className="text-3xl lg:text-6xl text-center z-50">
+              &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
+            </p>
+            <span className="lg:text-lg">Neil Gershenfeld</span>
+          </div>
+          <div className="relative flex flex-col items-center xl:absolute xl:right-0 xl:top-32">
+            <Image src="/services/creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
+            <Image src="/services/creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
+          </div>
+        </div>
+
         {/* Tools I use to work */}
-        <div className="py-10">
-          <Image className="absolute right-16 animate-float" src="/deco/stars_two.svg" alt="Bulb" width={100} height={120} />
-          <h4 className="text-xl lg:text-4xl py-5 font-regular text-gray-normal text-center">
-            <span className="word-deco">Tools</span> I use to work
-          </h4>
-          <div className="flex flex-col items-center">
-            <div className="flex flex-col items-start">
-              {/* As a UX Engineer */}
-              <div className="flex flex-col p-4">
-                <span className="text-lg text-gray-light pb-4">As a Web Developer</span>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  {addWebDeveloperTool.map((item, index) => (
-                    <span className="py-3 px-4 w-[180px] rounded-lg text-center text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card" key={index}>
-                      {item}
-                    </span>
-                  ))}
+        <div className="flex flex-col ">
+          <div className="flex flex-col items-start gap-4">
+            <h4 className="text-xl lg:text-3xl text-gray-normal pt-5 lg:pt-0">
+              <span className="word-deco-s">Tools</span> I use to work
+            </h4>
+            <div className="flex flex-col items-start lg:items-center">
+              <div className="flex flex-col items-start gap-4">
+                {/* As a UX Engineer */}
+                <div className="flex flex-col">
+                  <span className="lg:text-lg text-gray-light pb-4">As a Web Developer</span>
+                  <div className="flex flex-wrap gap-4 justify-center">
+                    {addWebDeveloperTool.map((item, index) => (
+                      <span
+                        className="py-3 px-4 w-[180px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
+                        key={index}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              {/* As a Graphic Designer */}
-              <div className="flex flex-col p-4">
-                <span className="text-lg text-gray-light pb-4">As a Graphic Designer</span>
-                <div className="flex flex-wrap gap-4 items-center justify-center">
-                  {addGraphicDesignerTool.map((item, index) => (
-                    <span className="py-3 px-4 w-[250px] rounded-lg text-center text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card" key={index}>
-                      {item}
-                    </span>
-                  ))}
+                {/* As a Graphic Designer */}
+                <div className="flex flex-col">
+                  <span className="lg:text-lg text-gray-light pb-4">As a Graphic Designer</span>
+                  <div className="flex flex-wrap gap-4 items-center justify-center">
+                    {addGraphicDesignerTool.map((item, index) => (
+                      <span
+                        className="py-3 px-4 w-[180px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
+                        key={index}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

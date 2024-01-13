@@ -36,13 +36,13 @@ export default function Gallery() {
   };
 
   return (
-    <div className="py-5">
-      <div className="grid grid-cols-2 grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-6 ">
-        <div className="col-span-1 row-span-1 relative h-60 lg:h-[32rem]">
-          <Image src={getRandomImgLeft()} className="rounded-xl object-cover w-full h-full shadow-image-card" alt="blabla" priority />
+    <div>
+      <div className="grid grid-cols-2 grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-3 lg:gap-5 ">
+        <div className="col-span-1 row-span-1 relative h-60 lg:h-[28rem]">
+          <Image src={getRandomImgLeft()} className="rounded-xl object-cover w-full h-full shadow-button" alt="blabla" priority />
         </div>
-        <div className="col-span-1 row-span- lg:col-span-2 relative h-60 lg:h-[32rem]">
-          <Image src={getRandomImgRight()} className="rounded-xl object-cover w-full h-full shadow-image-card" alt="blabla" priority />
+        <div className="col-span-1 row-span- lg:col-span-2 relative h-60 lg:h-[28rem]">
+          <Image src={getRandomImgRight()} className="rounded-xl object-cover w-full h-full shadow-button" alt="blabla" priority />
         </div>
       </div>
     </div>

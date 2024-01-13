@@ -14,7 +14,7 @@ const addNewProjectCategory = [
     category: "Graphic Design",
     imgUrl: "/projects/graphic-design.gif",
     textAlt: "Image one",
-    text: "Each project is unique; I collaborate closely with clients to realize their visions. My aim is to ensure your brand looks its best, whether launching or refreshing its visual identity.",
+    text: "Each project is unique. I collaborate closely with my clients to realize their visions and create a great impact. My aim is to ensure your brand looks its best, whether launching or refreshing its visual identity.",
     button: "See Projects",
   },
   {
@@ -37,36 +37,21 @@ const addNewProjectCategory = [
 
 export default function Projects() {
   return (
-    <div id="projects">
-      <h3 className="text-6xl font-semibold text-center text-primary-color"><span className="word-deco-primary">Projects</span></h3>
-      {/* Quote container */}
-      <div className="pt-10">
-        <div className="py-10">
-          {/* <div className="relative inset-0 overflow-hidden">
-            <Image src="/stickers.png" className="z-50 absolute object-cover opacity-80" width={350} height={350} alt="blabla" priority />
-          </div> */}
-          <div className="flex flex-col items-start justify-center w-10/12 lg:w-3/4 mx-auto gap-4 text-gray-normal">
-            <p className="text-2xl lg:text-4xl ">
-              &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
-            </p>
-            <span className="lg:text-lg">Neil Gershenfeld</span>
-          </div>
-        </div>
-      </div>
-
+    <div className="py-10 px-5 lg:px-10 flex flex-col items-center" id="projects">
+      <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal mb-5">Projects</h3>
       {/* List of projects */}
-      <div className="pt-10 px-10 flex flex-col items-center justify-center lg:flex-row lg:flex-wrap ">
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:flex-wrap">
         {addNewProjectCategory.map((card, index) => (
-          <div className="flex flex-col rounded-xl m-2 lg:w-5/12 bg-white border-[3px] border-primary-color shadow-project-card" key={index} >
+          <div className="flex flex-col rounded-xl my-2 lg:m-4 lg:w-5/12 bg-white border-[3px] border-primary-color shadow-project-card" key={index}>
             <div className="flex flex-row justify-start gap-6 border-primary-color border-b-[3px]">
               <span className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 border-primary-color border-r-[3px] text-gray-light ">{card.number}</span>
               <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 text-gray-light">{card.category}</p>
             </div>
-            <div className="flex flex-col items-center p-6">
+            <div className="flex flex-col lg:flex-row items-center gap-5 p-5 lg:p-10">
               <Image src={card.imgUrl} alt={card.textAlt} width={150} height={150} priority />
-              <div className="flex flex-col justify-center items-center gap-2">
-                <p className="text-center p-4 text-gray-light">{card.text}</p>
-                <span className="text-light text-lg bg-primary-color hover:-translate-y-1 shadow-button hover:bg-primary-color-dark hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-12 py-3 rounded-lg">
+              <div className="flex flex-col items-center lg:items-start gap-5">
+                <p className=" text-gray-light">{card.text}</p>
+                <span className="text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
                   {card.button}
                 </span>
               </div>
