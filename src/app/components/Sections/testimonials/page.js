@@ -24,16 +24,22 @@ const addTestimonial = [
 
 export default function Testimonials() {
   return (
-    <div className="px-10">
-      <div className="">
-        <h3 className="text-4xl text-gray-normal font-semibold">Hear it from them</h3>
-        {/* <Image className="absolute" src="deco/bubble.svg" width="100" height="90" alt="3D laptop" priority /> */}
+    <div className=" bg-white/70 p-5 lg:p-10 border-y-2 border-primary-color-light">
+      <Image className="hidden lg:block absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} />
+      <div className="flex flex-col">
+        <div className="flex flex-col items-start gap-2 lg:gap-0">
+        <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal">Testimonials</h3>
+          <span className="text-4xl lg:text-6xl text-primary-color font-semibold">
+            <span className="lg:hidden">Hear it from them</span>
+            <span className="word-deco-l hidden lg:block">Hear it from them</span>
+          </span>
+        </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-10 py-10 items-end justify-center ">
+      <div className="flex flex-col lg:flex-row gap-10 pt-6 lg:pt-12 items-end justify-center">
         {addTestimonial.map((card, index) => (
-          <div key={index} className="flex flex-col gap-4 lg:w-2/5 ">
+          <div key={index} className="flex flex-col gap-4">
             <div>
-              <p className="p-10 bg-primary-color-light shadow-tool-card rounded-md text-gray-normal leading-7">{card.text}</p>
+              <p className="p-5 lg:p-10 bg-primary-color-light shadow-tool-card rounded-md text-gray-normal leading-7 lg:text-lg">{card.text}</p>
               <Image className="relative top-auto left-10 drop-shadow-testimonial" src="/testimonials/testimonial.svg" alt="Questions" width={50} height={50} />
             </div>
             <div className="flex flex-row gap-4">

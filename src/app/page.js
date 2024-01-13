@@ -2,7 +2,6 @@
 import Services from "./components/Sections/services/page";
 import Projects from "./components/Sections/projects/page";
 import About from "./components/Sections/about/page";
-import Contact from "./components/Sections/contact/page";
 import Footer from "./components/base/footer";
 import LatestProjects from "./components/latestprojects";
 import Hero from ".";
@@ -21,7 +20,6 @@ export default function Home() {
       <Projects />
       <FAQs />
       <About />
-      <Contact />
       <Footer />
     </main>
   );

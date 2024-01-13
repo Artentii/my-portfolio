@@ -28,8 +28,6 @@ const addInformationCard = [
 export default function LatestProjects() {
   return (
     <div className="relative m-10 ">
-      {/* <Image className="absolute -left-16 -rotate-12 top-10 z-50" src="/deco/bulb.svg" alt="Bulb" width={150} height={150} /> */}
-      {/* <Image className="absolute right-0 bottom-0 -rotate-45 z-50" src="/new_project_hand.png" alt="Bulb" width={150} height={120} /> */}
       <div>
         <Image className="absolute -top-10 left-56 z-50" src="/deco/lines.svg" alt="Bulb" width={90} height={80} />
         <h3 className="text-4xl text-gray-normal font-semibold"><span className="word-deco">Latest projects</span></h3>

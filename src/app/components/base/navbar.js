@@ -63,7 +63,7 @@ export default function NavBar() {
           <Link href={card.route} key={index}>
             <li
               onClick={() => handleItemClick(card.route)}
-              className={`transition-all duration-500 ease-in-out px-6 py-2 rounded-full ${activeSection === card.route ? "bg-primary-color text-light" : "hover:text-primary-color-dark"}`}
+              className={`transition-all duration-500 ease-in-out px-6 py-2 rounded-full ${activeSection === card.route ? "bg-primary-color text-white" : "hover:text-primary-color-dark"}`}
             >
               {card.name}
             </li>
@@ -72,8 +72,8 @@ export default function NavBar() {
       </ul>
       {/* Content right */}
       <div className={`flex flex-row items-center justify-center gap-4 text-lg transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
-        <button className="px-8 py-3 rounded-lg shadow-button hover:shadow-button-two hover:-translate-y-1 bg-primary-color hover:lg:bg-primary-color-dark group transition-all duration-200 ease-in-out">
-          <p className="text-light">Let&apos;s talk!</p>
+        <button className="text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
+          <p>Let&apos;s talk!</p>
         </button>
         <div className="flex flex-row gap-2 items-center text-gray">
           <span>Mode</span>
