@@ -66,7 +66,7 @@ const addDigitalPresenceCards = [
 
 export default function Services() {
   return (
-    <div className="p-5 lg:p-10 m-5 lg:m-10 bg-white/70 rounded-md" id="services">
+    <div className="p-5 lg:p-10 mx-5 lg:m-10 bg-white/70 rounded-md" id="services">
       {/* <Image className="absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} /> */}
       <Image className="absolute right-20 animate-float hidden lg:block" src="/deco/stars_two.svg" alt="Bulb" width={125} height={120} />
       <div className=" flex justify-center" id="services">
@@ -102,7 +102,7 @@ export default function Services() {
           <h4 className="text-2xl lg:text-4xl text-gray-normal text-center">
             Elevate your <span className="word-deco-s">digital presence</span>
           </h4>
-          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg text-center text-gray-light mx-auto">
+          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg text-gray-light mx-auto">
             Your digital presence serves as the digital storefront, the first point of contact for your audience. It&apos;s the online space where potential customers and visitors get their first
             glimpse of your brand, products, or services. These features will help you achieving a remarkable digital presence.
           </p>
@@ -192,8 +192,8 @@ export default function Services() {
             <span className="lg:text-lg">Neil Gershenfeld</span>
           </div>
           <div className="relative flex flex-col items-center xl:absolute xl:right-0 xl:top-32">
-            <Image src="/services/creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
-            <Image src="/services/creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
+            <Image src="/services/Creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
+            <Image src="/services/Creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
           </div>
         </div>
 
