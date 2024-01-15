@@ -48,7 +48,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="flex flex-row items-center justify-between py-5 px-10 md:px-20 sticky top-0 z-50">
+    <nav className="flex flex-row items-center justify-between py-5 px-5 md:px-20 sticky top-0 z-50">
       {/* Content left */}
       <Link href="/" className={`flex flex-row items-center justify-center gap-4 transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
         <Image className="lg:mr-44" src="/logos/logomark_2.png" width="50" height="50" alt="3D laptop" priority />
@@ -72,11 +72,11 @@ export default function NavBar() {
       </ul>
       {/* Content right */}
       <div className={`flex flex-row items-center justify-center gap-4 lg:text-lg transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
-        <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
+        <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-3 rounded-md">
           <p>Let&apos;s talk!</p>
         </a>
         <div className="flex flex-row gap-2 items-center text-gray">
-          <span>Mode</span>
+          <span className="hidden xl:block">Mode</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
             <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
           </svg>
