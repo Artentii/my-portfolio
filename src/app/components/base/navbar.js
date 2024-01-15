@@ -48,7 +48,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="flex flex-row items-center justify-between py-5 px-5 md:px-20 sticky top-0 z-50">
+    <nav className="flex flex-row items-center justify-between pt-5 px-5 md:px-20 sticky top-0 z-50">
       {/* Content left */}
       <Link href="/" className={`flex flex-row items-center justify-center gap-4 transition-all duration-100 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
         <Image className="lg:mr-44 w-10 xl:w-[50px]" src="/logos/logomark_2.png" width="50" height="50" alt="3D laptop" priority />
@@ -72,7 +72,7 @@ export default function NavBar() {
       </ul>
       {/* Content right */}
       <div className={`flex flex-row items-center justify-center gap-4 lg:text-lg transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
-        <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-3 rounded-md">
+        <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-2 lg:py-3 rounded-md">
           <p>Let&apos;s talk!</p>
         </a>
         <div className="flex flex-row gap-2 items-center text-gray">

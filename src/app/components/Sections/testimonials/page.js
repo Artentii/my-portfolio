@@ -24,7 +24,7 @@ const addTestimonial = [
 
 export default function Testimonials() {
   return (
-    <div className=" bg-white/70 p-5 lg:p-10 border-y-2 border-primary-color-light">
+    <div className=" bg-white/70 my-5 p-5 lg:p-10 border-y-2 border-primary-color-light">
       <Image className="hidden lg:block absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} />
       <div className="flex flex-col">
         <div className="flex flex-col items-start gap-2 lg:gap-0">
