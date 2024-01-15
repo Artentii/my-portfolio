@@ -51,7 +51,7 @@ export default function NavBar() {
     <nav className="flex flex-row items-center justify-between py-5 px-5 md:px-20 sticky top-0 z-50">
       {/* Content left */}
       <Link href="/" className={`flex flex-row items-center justify-center gap-4 transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
-        <Image className="lg:mr-44" src="/logos/logomark_2.png" width="50" height="50" alt="3D laptop" priority />
+        <Image className="lg:mr-44 w-10 xl:w-[50px]" src="/logos/logomark_2.png" width="50" height="50" alt="3D laptop" priority />
       </Link>
       {/* List items */}
       <ul
