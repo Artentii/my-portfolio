@@ -16,20 +16,21 @@ export default function Hero() {
           I am an enthusiastic web developer with a solid background in graphic and web design. My passion lies in turning ideas into user-friendly experiences that not only engage users but also
           enrich their lives in various ways.
         </p>
+        
       </div>
       <div className="flex flex-col items-start gap-4 lg:pt-5 3xl:pt-10">
         <p className="text-gray-normal font-medium text-center text-md lg:text-lg">How can I help you?</p>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-5">
-          <button className="lg:w-[350px] text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
-            <p className="font-extralight text-md lg:text-xl">
+          <a href="mailto:marinaterentiicebotari@gmail.com" className="lg:w-[350px] text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
+            <p className="font-extralight text-md lg:text-xl text-center">
               I need a <b>Web Developer</b>
             </p>
-          </button>
-          <button className="lg:w-[350px] text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
-            <p className="font-extralight text-md lg:text-xl">
+          </a>
+          <a href="mailto:marinaterentiicebotari@gmail.com" className="lg:w-[350px] text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
+            <p className="font-extralight text-md lg:text-xl text-center">
               I need a <b>Graphic Designer</b>
             </p>
-          </button>
+          </a>
         </div>
       </div>
 

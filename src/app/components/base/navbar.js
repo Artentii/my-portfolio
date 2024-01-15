@@ -72,9 +72,9 @@ export default function NavBar() {
       </ul>
       {/* Content right */}
       <div className={`flex flex-row items-center justify-center gap-4 text-lg transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
-        <button className="text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
+        <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white text-lg bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
           <p>Let&apos;s talk!</p>
-        </button>
+        </a>
         <div className="flex flex-row gap-2 items-center text-gray">
           <span>Mode</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
