@@ -122,10 +122,10 @@ export default function Services() {
         <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
         <div className="relative flex flex-col">
-          <p className="text-2xl lg:text-4xl text-center mx-auto text-gray-normal pb-10 ">
+          <p className="text-2xl lg:text-4xl text-center mx-auto text-gray-normal">
             Steps in my <span className="word-deco-s">creative process</span>
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-primary-color-light rounded-lg text-gray-light shadow-service-card border-2 border-primary-color">
+          <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-primary-color-light rounded-lg text-gray-light shadow-service-card border-2 border-primary-color mt-5 lg:mt-10">
             <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center rounded-t-md lg:rounded-tl-md lg:rounded-tr-none p-5 lg:p-0 ">
               <div className="my-10">
                 <p className="font-bold text-lg pb-2 text-primary-color">1. Research and discovery</p>
@@ -184,14 +184,14 @@ export default function Services() {
         <Image className="mx-auto hidden lg:block" src="/deco/divider.png" alt="Bulb" width={1400} height={100} />
         <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
-        <div className="lg:pt-10 lg:pb-20 relative">
-          <div className="flex flex-col items-center justify-center 3xl:w-9/12 w-10/12 mx-auto gap-2 lg:gap-4 text-gray-normal">
+        <div className="lg:pt-5 lg:pb-10 relative">
+          <div className="flex flex-col items-center justify-center 3xl:w-9/12 xl:w-10/12 mx-auto gap-2 lg:gap-4 text-gray-normal">
             <p className="text-3xl lg:text-6xl text-center z-50">
               &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
             </p>
             <span className="lg:text-lg">Neil Gershenfeld</span>
           </div>
-          <div className="relative flex flex-col items-center xl:absolute xl:right-0 xl:top-32">
+          <div className="relative flex flex-col items-center xl:absolute xl:-right-10 xl:top-20 my-5 xl:my-0">
             <Image src="/services/Creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
             <Image src="/services/Creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
           </div>
@@ -200,10 +200,10 @@ export default function Services() {
         {/* Tools I use to work */}
         <div className="flex flex-col ">
           <div className="flex flex-col items-start gap-4">
-            <h4 className="text-xl lg:text-3xl text-gray-normal pt-5 lg:pt-0">
+            <h4 className="text-xl lg:text-3xl text-gray-normal">
               <span className="word-deco-s">Tools</span> I use to work
             </h4>
-            <div className="flex flex-col items-start lg:items-center">
+            <div className="flex flex-col items-start lg:items-center xl:my-5">
               <div className="flex flex-col items-start gap-4">
                 {/* As a UX Engineer */}
                 <div className="flex flex-col">
@@ -211,7 +211,7 @@ export default function Services() {
                   <div className="flex flex-wrap gap-4 justify-center">
                     {addWebDeveloperTool.map((item, index) => (
                       <span
-                        className="py-3 px-4 w-[180px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
+                        className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
                         key={index}
                       >
                         {item}
@@ -225,7 +225,7 @@ export default function Services() {
                   <div className="flex flex-wrap gap-4 items-center justify-center">
                     {addGraphicDesignerTool.map((item, index) => (
                       <span
-                        className="py-3 px-4 w-[180px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
+                        className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
                         key={index}
                       >
                         {item}

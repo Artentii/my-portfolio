@@ -27,8 +27,8 @@ module.exports = {
         "image-card": "4px 4px #ffb5d0",
         section: "3px 3px #E9CDFF",
       },
-      dropShadow:{
-        testimonial: "4px 4px #C497EA"
+      dropShadow: {
+        testimonial: "4px 4px #C497EA",
       },
       screens: {
         "3xl": "1920px",
@@ -42,6 +42,7 @@ module.exports = {
         swing: "swing 2s ease-in-out infinite",
         tree: "tree 2s ease-in-out infinite",
         light: "light 2s ease-in-out infinite",
+        question: "question 3s ease-in-out infinite",
       },
       keyframes: {
         wiggle: {
@@ -77,6 +78,7 @@ module.exports = {
           },
         },
         light: { "0%, 100%": { opacity: "50%" }, "50%": { opacity: "100%" } },
+        question: { "0%": { transform: " translateY(8px) rotate(-3deg)" }, "50%": { transform: "translateY(0px) rotate(-3deg)" }, "100%": { transform: "translateY(8px) rotate(-3deg)" } },
       },
       borderRadius: {
         large: "50px",

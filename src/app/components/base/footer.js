@@ -24,10 +24,24 @@ const addExtraItem = [
 export default function Footer() {
   return (
     <div className="p-5 lg:p-10 bg-white/70 border-t-2 border-primary-color-light">
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between">
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
         {/* Left content */}
-        <div className="flex flex-col lg:flex-row gap-2 items-center">
-          <Image src="/footer.png" width="150" height="150" alt="3D laptop" priority />
+        <div className="flex flex-col lg:flex-row xl:gap-2 items-center">
+          <div className="flex flex-row items-center gap-4">
+            <Image src="/footer.png" width="150" height="150" alt="3D laptop" priority />
+            <div className="flex flex-col items-start gap-2 xl:hidden">
+              <div className="flex flex-col items-start gap-2 lg:text-lg">
+                <span className="text-lg lg:text-2xl font-semibold text-gray-normal">Got an idea?</span>
+                <hr className="h-0.5 rounded-full w-full bg-primary-color-light"></hr>
+                <a className="flex flex-row items-center gap-2 cursor-pointer" href="mailto:marinaterentiicebotari@gmail.com">
+                  <span className="text-gray-light">Let&apos;s work together!</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-gray-light" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col items-start gap-2 lg:w-96">
             <p className="text-normal-gray ">A designer who loves creating cool and usable stuff while having a good time. From Spain with love.</p>
             <p className="text-gray-light ">Contact me for full-time jobs, freelance projects, or just to say hi.</p>
@@ -36,6 +50,22 @@ export default function Footer() {
         </div>
 
         {/* Center content */}
+        <div className="hidden xl:flex">
+          <div className="flex flex-col items-start gap-2 ">
+            <div className="flex flex-col items-start gap-2 lg:text-lg">
+              <span className="text-lg lg:text-2xl font-semibold text-gray-normal">Got an idea?</span>
+              <hr className="h-0.5 rounded-full w-full bg-primary-color-light"></hr>
+              <a className="flex flex-row items-center gap-2 cursor-pointer" href="mailto:marinaterentiicebotari@gmail.com">
+                <span className="text-gray-light">Let&apos;s work together!</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-gray-light" class="bi bi-send" viewBox="0 0 16 16">
+                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right content */}
         <div className="flex flex-wrap gap-5 lg:gap-10">
           {/* Social Media */}
           <div className="flex flex-col gap-2">
@@ -63,20 +93,6 @@ export default function Footer() {
                 <span className="text-gray hover:underline hover:underline-offset-4 hover:text-black transition-all duration-300 ease-in-out">{card.title}</span>{" "}
               </a>
             ))}
-          </div>
-        </div>
-
-        {/* Right content */}
-        <div className="flex flex-col items-start gap-2">
-          <div className="flex flex-col items-start gap-2 lg:text-lg">
-            <span className="text-lg lg:text-2xl font-semibold text-gray-normal">Got an idea?</span>
-            <hr className="h-0.5 rounded-full w-full bg-primary-color-light"></hr>
-            <a className="flex flex-row items-center gap-2 cursor-pointer" href="mailto:marinaterentiicebotari@gmail.com">
-              <span className="text-gray-light">Let&apos;s work together!</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-gray-light" class="bi bi-send" viewBox="0 0 16 16">
-                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-              </svg>
-            </a>
           </div>
         </div>
       </div>

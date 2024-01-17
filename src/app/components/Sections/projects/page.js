@@ -37,8 +37,8 @@ const addNewProjectCategory = [
 
 export default function Projects() {
   return (
-    <div className="py-10 px-5 lg:px-10 flex flex-col items-center" id="projects">
-      <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal mb-5">Projects</h3>
+    <div className="px-5 lg:px-10 flex flex-col items-center gap-5 xl:my-10" id="projects">
+      <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal">Projects</h3>
       {/* List of projects */}
       <div className="flex flex-col items-center justify-center lg:flex-row lg:flex-wrap">
         {addNewProjectCategory.map((card, index) => (

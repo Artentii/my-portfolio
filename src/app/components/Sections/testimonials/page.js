@@ -24,41 +24,45 @@ const addTestimonial = [
 
 export default function Testimonials() {
   return (
-    <div className=" bg-white/70 my-5 p-5 lg:p-10 border-y-2 border-primary-color-light">
-      <Image className="hidden lg:block absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} />
-      <div className="flex flex-col">
-        <div className="flex flex-col items-start gap-2 lg:gap-0">
-        <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal">Testimonials</h3>
-          <span className="text-4xl lg:text-6xl text-primary-color font-semibold">
-            <span className="lg:hidden">Hear it from them</span>
-            <span className="word-deco-l hidden lg:block">Hear it from them</span>
-          </span>
+    <div>
+      <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
+      <div className=" bg-white/70 p-5 lg:p-10 border-y-2 border-primary-color-light">
+        <Image className="hidden lg:block absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} />
+        <div className="flex flex-col">
+          <div className="flex flex-col items-center lg:items-start gap-2 lg:gap-0">
+            <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal">Testimonials</h3>
+            <span className="text-4xl lg:text-6xl text-primary-color font-semibold">
+              <span className="lg:hidden">Hear it from them</span>
+              <span className="word-deco-dark-l hidden lg:block">Hear it from them</span>
+            </span>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-10 pt-6 lg:pt-12 items-end justify-center">
+          {addTestimonial.map((card, index) => (
+            <div key={index} className="flex flex-col gap-4">
+              <div>
+                <p className="p-5 lg:p-10 bg-primary-color-light shadow-tool-card rounded-md text-gray-normal leading-7 lg:text-lg">{card.text}</p>
+                <Image className="relative top-auto left-10 drop-shadow-testimonial" src="/testimonials/testimonial.svg" alt="Questions" width={50} height={50} />
+              </div>
+              <div className="flex flex-row gap-4">
+                <div>
+                  <Image className="rounded-full" src={card.imgUrl} alt="Questions" width={50} height={50} />
+                </div>
+                <div className="flex flex-col items-start">
+                  <span className="text-lg font-semibold">{card.name}</span>
+                  <span>
+                    {card.position} at{" "}
+                    <a href={card.url} target="_blank" className="font-medium">
+                      {card.business}
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-10 pt-6 lg:pt-12 items-end justify-center">
-        {addTestimonial.map((card, index) => (
-          <div key={index} className="flex flex-col gap-4">
-            <div>
-              <p className="p-5 lg:p-10 bg-primary-color-light shadow-tool-card rounded-md text-gray-normal leading-7 lg:text-lg">{card.text}</p>
-              <Image className="relative top-auto left-10 drop-shadow-testimonial" src="/testimonials/testimonial.svg" alt="Questions" width={50} height={50} />
-            </div>
-            <div className="flex flex-row gap-4">
-              <div>
-                <Image className="rounded-full" src={card.imgUrl} alt="Questions" width={50} height={50} />
-              </div>
-              <div className="flex flex-col items-start">
-                <span className="text-lg font-semibold">{card.name}</span>
-                <span>
-                  {card.position} at{" "}
-                  <a href={card.url} target="_blank" className="font-medium">
-                    {card.business}
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
     </div>
   );
 }
