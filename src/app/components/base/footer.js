@@ -23,7 +23,7 @@ const addExtraItem = [
 
 export default function Footer() {
   return (
-    <div className="p-5 lg:p-10 bg-white/70 border-t-2 border-primary-color-light">
+    <div className="p-5 lg:p-10 bg-white/70 border-t-2 border-purple-light">
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
         {/* Left content */}
         <div className="flex flex-col lg:flex-row xl:gap-2 items-center">
@@ -31,8 +31,8 @@ export default function Footer() {
             <Image src="/footer.png" width="150" height="150" alt="3D laptop" priority />
             <div className="flex flex-col items-start gap-2 xl:hidden">
               <div className="flex flex-col items-start gap-2 lg:text-lg">
-                <span className="text-lg lg:text-2xl font-semibold text-gray-normal">Got an idea?</span>
-                <hr className="h-0.5 rounded-full w-full bg-primary-color-light"></hr>
+                <span className="text-lg lg:text-2xl font-semibold text-gray">Got an idea?</span>
+                <hr className="h-0.5 rounded-full w-full bg-purple-light"></hr>
                 <a className="flex flex-row items-center gap-2 cursor-pointer" href="mailto:marinaterentiicebotari@gmail.com">
                   <span className="text-gray-light">Let&apos;s work together!</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-gray-light" class="bi bi-send" viewBox="0 0 16 16">
@@ -53,8 +53,8 @@ export default function Footer() {
         <div className="hidden xl:flex">
           <div className="flex flex-col items-start gap-2 ">
             <div className="flex flex-col items-start gap-2 lg:text-lg">
-              <span className="text-lg lg:text-2xl font-semibold text-gray-normal">Got an idea?</span>
-              <hr className="h-0.5 rounded-full w-full bg-primary-color-light"></hr>
+              <span className="text-lg lg:text-2xl font-semibold text-gray">Got an idea?</span>
+              <hr className="h-0.5 rounded-full w-full bg-purple-light"></hr>
               <a className="flex flex-row items-center gap-2 cursor-pointer" href="mailto:marinaterentiicebotari@gmail.com">
                 <span className="text-gray-light">Let&apos;s work together!</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-gray-light" class="bi bi-send" viewBox="0 0 16 16">
@@ -69,7 +69,7 @@ export default function Footer() {
         <div className="flex flex-wrap gap-5 lg:gap-10">
           {/* Social Media */}
           <div className="flex flex-col gap-2">
-            <p className="text-lg lg:text-2xl font-semibold text-razzmataz text-primary-color">Say hello!</p>
+            <p className="text-lg lg:text-2xl font-semibold text-razzmataz text-purple">Say hello!</p>
             {addSocialNetworkItem.map((card, index) => (
               <a key={index} href={card.URL} target="_blank">
                 <span className="text-gray hover:underline hover:underline-offset-4 hover:text-black transition-all duration-300 ease-in-out">{card.title}</span>{" "}
@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
           {/* Explore items */}
           <div className="flex flex-col gap-2">
-            <p className="text-lg lg:text-2xl font-semibold text-primary-color">Explore</p>
+            <p className="text-lg lg:text-2xl font-semibold text-purple">Explore</p>
             {addExploreItem.map((card, index) => (
               <a key={index} href={card.URL}>
                 <span className="text-gray hover:underline hover:underline-offset-4 hover:text-black transition-all duration-300 ease-in-out">{card.title}</span>{" "}
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
           {/* Add extra item */}
           <div className="flex flex-col gap-2">
-            <p className="text-lg lg:text-2xl font-semibold text-primary-color">More</p>
+            <p className="text-lg lg:text-2xl font-semibold text-purple">More</p>
             {addExtraItem.map((card, index) => (
               <a key={index} href={card.URL} target="_blank">
                 <span className="text-gray hover:underline hover:underline-offset-4 hover:text-black transition-all duration-300 ease-in-out">{card.title}</span>{" "}

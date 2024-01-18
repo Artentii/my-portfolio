@@ -4,32 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 const sections = [
-  { name: "Home", route: "/#hero" },
+  { name: "Home", route: "/" },
   {
     name: "Services",
     route: "/#services",
   },
   {
-    name: "Projects",
-    route: "/#projects",
+    name: "Work",
+    route: "/#work",
   },
   {
     name: "FAQs",
-    route: "/#FAQs",
+    route: "/#faqs",
   },
   {
     name: "About",
     route: "/#about",
   },
-  {
-    name: "Contact",
-    route: "/#contact",
-  },
 ];
 
 export default function NavBar() {
   //Active list item
-  const [activeSection, setActiveSection] = useState("/#hero");
+  const [activeSection, setActiveSection] = useState("/");
   const handleItemClick = (route) => {
     setActiveSection(route);
   };
@@ -63,7 +59,7 @@ export default function NavBar() {
           <Link href={card.route} key={index}>
             <li
               onClick={() => handleItemClick(card.route)}
-              className={`transition-all duration-500 ease-in-out px-6 py-2 rounded-full ${activeSection === card.route ? "bg-primary-color text-white" : "hover:text-primary-color-dark"}`}
+              className={`transition-all duration-500 ease-in-out px-6 py-2 rounded-full ${activeSection === card.route ? "bg-purple text-white" : "hover:text-purple-dark"}`}
             >
               {card.name}
             </li>
@@ -72,9 +68,13 @@ export default function NavBar() {
       </ul>
       {/* Content right */}
       <div className={`flex flex-row items-center justify-center gap-4 lg:text-lg transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
-        <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-2 lg:py-3 rounded-md">
+        <a
+          href="mailto:marinaterentiicebotari@gmail.com"
+          className="text-white bg-purple lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-purple lg:hover:text-purple lg:hover:border-purple lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-2 lg:py-3 rounded-md"
+        >
           <p>Let&apos;s talk!</p>
         </a>
+
         <div className="flex flex-row gap-2 items-center text-gray">
           <span className="hidden xl:block">Mode</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">

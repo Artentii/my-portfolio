@@ -1,18 +1,15 @@
 //Components
-import Services from "./components/Sections/services/page";
-import Projects from "./components/Sections/projects/page";
-import About from "./components/Sections/about/page";
-import Footer from "./components/base/footer";
+import Services from "./sections/services/page";
+import Projects from "./sections/work/page";
+import About from "./sections/about/page";
 import LatestProjects from "./components/latestprojects";
 import Hero from ".";
-import NavBar from "./components/base/navbar";
-import FAQs from "./components/Sections/faqs/page";
-import Testimonials from "./components/Sections/testimonials/page";
+import FAQs from "./sections/faqs/page";
+import Testimonials from "./sections/testimonials/page";
+
 export default function Home() {
   return (
-    <main className="bg-light">
-      <div className="noise"></div>
-      <NavBar />
+    <main>
       <Hero />
       <LatestProjects />
       <Services />
@@ -20,7 +17,6 @@ export default function Home() {
       <Projects />
       <FAQs />
       <About />
-      <Footer />
     </main>
   );
 }

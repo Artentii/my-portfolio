@@ -1,27 +1,28 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const addInformationCard = [
-  { textAlt: "Image One", imgUrl: "/latest_projects/latest_project_ethseer.jpg", category: "Web Design & Brand Identity", title: "Ethseer", button: "See project" },
+  { textAlt: "Image One", imgUrl: "/latest_projects/latest_project_ethseer.jpg", category: ["Web design", "Graphic design", "Brand identity"], title: "Ethseer", link: "/projects/ethseer.js" },
   {
     textAlt: "Image Two",
     imgUrl: "/latest_projects/latest_project_migalabs.jpg",
-    category: "Web Design & Brand Identity",
+    category: ["Web design", "Graphic design", "Brand identity"],
     title: "Migalabs",
-    button: "See project",
+    link: "/projects/migalabs.js",
   },
   {
     textAlt: "Image Three",
     imgUrl: "/latest_projects/latest_project_starknet.jpg",
-    category: "Illustration & Merchandising",
+    category: ["Brand identity"],
     title: "Starknet",
-    button: "See project",
+    link: "/projects/starknet.js",
   },
   {
     textAlt: "Image Four",
     imgUrl: "/latest_projects/latest_project_artentii.jpg",
-    category: "Web Design & Brand Identity",
+    category: ["Web design", "Graphic design", "Brand identity"],
     title: "Artentii",
-    button: "See project",
+    link: "/projects/artentii.js",
   },
 ];
 
@@ -30,19 +31,28 @@ export default function LatestProjects() {
     <div className="relative mx-5 lg:mx-10">
       <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
       <div className=" flex flex-col items-start gap-5">
-        <h3 className="text-3xl text-gray-normal font-semibold">Recent work</h3>
+        <h3 className="text-3xl text-gray font-semibold">Recent work</h3>
         <div className="flex flex-col lg:flex-row gap-4 w-full">
           {addInformationCard.map((card, index) => (
-            <div key={index} className="relative w-full group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40">
+            <Link
+              href={card.link}
+              key={index}
+              target="_blank"
+              className=" cursor-pointer relative w-full group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40"
+            >
               <Image className="w-full object-cover rounded-md" src={card.imgUrl} alt={card.textAlt} width={400} height={400} />
-              <div className="absolute rounded-md p-10 inset-0 lg:hidden bg-gradient-to-r from-white to-transparent lg:hover:bg-gradient-to-r transition-all duration-300  ease-in-out flex lg:group-hover:flex flex-col items-start justify-center gap-4">
-                <span className="uppercase font-medium text-gray-normal">{card.category}</span>
-                <span className="font-semibold text-gray-normal text-4xl">{card.title}</span>
-                <button className=" text-primary-color lg:text-white bg-white lg:bg-primary-color lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-primary-color lg:hover:text-primary-color lg:hover:border-primary-color lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 py-2 rounded-md">
-                  {card.button}
-                </button>
+              <div className="absolute rounded-md p-10 inset-0 lg:hidden bg-gradient-to-r from-white to-white/20 lg:hover:bg-gradient-to-r transition-all duration-300  ease-in-out flex lg:group-hover:flex flex-col items-start justify-center gap-2 xl:gap-4">
+                <span className="font-semibold text-gray text-3xl xl:text-5xl">{card.title}</span>
+                <div className="flex flex-wrap items-center gap-1">
+                  {card.category.map((item) => (
+                    <div key={item} className="px-2 bg-white border border-gray rounded-full">
+                      <span className="uppercase font-regular text-gray text-xs">{item}</span>
+                    </div>
+                  ))}
+                  <Link href={card.link} target="_blank"></Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
