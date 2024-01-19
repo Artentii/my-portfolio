@@ -9,7 +9,7 @@ const addNewProjectCategory = [
     textAlt: "Image one",
     text: "Crafting visually appealing, user-friendly websites transforms your vision into a compelling online presence. Whether revitalizing an existing site or starting anew, I bring ideas to life.",
     button: "See Projects",
-    path: "/projects/web",
+    path: "/pages/web",
   },
   {
     number: "[02]",
@@ -18,7 +18,7 @@ const addNewProjectCategory = [
     textAlt: "Image one",
     text: "Each project is unique. I collaborate closely with my clients to realize their visions and create a great impact. My aim is to ensure your brand looks its best, whether launching or refreshing its visual identity.",
     button: "See Projects",
-    path: "/projects/graphic",
+    path: "/pages/graphic",
   },
   {
     number: "[03]",
@@ -27,7 +27,7 @@ const addNewProjectCategory = [
     textAlt: "Image one",
     text: "From custom apparel with your logo to branded merchandise reflecting your unique identity, I'm here to help you make a statement. My designs enhance brand recognition and engage your target audience.",
     button: "See Projects",
-    path: "/projects/brand-identity",
+    path: "/pages/brand-identity",
   },
   {
     number: "[04]",
@@ -36,7 +36,7 @@ const addNewProjectCategory = [
     textAlt: "Image one",
     text: "This section reflects my profound passion for the arts in all forms. Featuring various artistic styles, from abstract to realistic, it's a space where creativity knows no limits and art knows no boundaries.",
     button: "See Projects",
-    path: "/projects/art-gallery",
+    path: "/pages/art-gallery",
   },
 ];
 

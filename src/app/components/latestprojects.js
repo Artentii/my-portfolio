@@ -1,28 +1,24 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const addInformationCard = [
-  { textAlt: "Image One", imgUrl: "/latest_projects/latest_project_ethseer.jpg", category: ["Web design", "Graphic design", "Brand identity"], title: "Ethseer", link: "/projects/ethseer.js" },
+  { textAlt: "Image One", imgUrl: "/latest_projects/latest_project_ethseer.jpg", category: ["Web design", "Graphic design", "Brand identity"], title: "Ethseer" },
   {
     textAlt: "Image Two",
     imgUrl: "/latest_projects/latest_project_migalabs.jpg",
     category: ["Web design", "Graphic design", "Brand identity"],
     title: "Migalabs",
-    link: "/projects/migalabs.js",
   },
   {
     textAlt: "Image Three",
     imgUrl: "/latest_projects/latest_project_starknet.jpg",
     category: ["Brand identity"],
     title: "Starknet",
-    link: "/projects/starknet.js",
   },
   {
     textAlt: "Image Four",
     imgUrl: "/latest_projects/latest_project_artentii.jpg",
     category: ["Web design", "Graphic design", "Brand identity"],
     title: "Artentii",
-    link: "/projects/artentii.js",
   },
 ];
 
@@ -34,11 +30,9 @@ export default function LatestProjects() {
         <h3 className="text-3xl text-gray font-semibold">Recent work</h3>
         <div className="flex flex-col lg:flex-row gap-4 w-full">
           {addInformationCard.map((card, index) => (
-            <Link
-              href={card.link}
+            <div
               key={index}
-              target="_blank"
-              className=" cursor-pointer relative w-full group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40"
+              className="relative w-full group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40"
             >
               <Image className="w-full object-cover rounded-md" src={card.imgUrl} alt={card.textAlt} width={400} height={400} />
               <div className="absolute rounded-md p-10 inset-0 lg:hidden bg-gradient-to-r from-white to-white/20 lg:hover:bg-gradient-to-r transition-all duration-300  ease-in-out flex lg:group-hover:flex flex-col items-start justify-center gap-2 xl:gap-4">
@@ -49,10 +43,9 @@ export default function LatestProjects() {
                       <span className="uppercase font-regular text-gray text-xs">{item}</span>
                     </div>
                   ))}
-                  <Link href={card.link} target="_blank"></Link>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
