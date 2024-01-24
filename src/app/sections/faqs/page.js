@@ -19,7 +19,6 @@ export default function FAQs() {
           <Accordion />
         </div>
       </div>
-      <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
     </div>
   );
 }

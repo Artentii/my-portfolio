@@ -184,16 +184,19 @@ export default function Services() {
         <Image className="mx-auto hidden lg:block" src="/deco/divider.png" alt="Bulb" width={1400} height={100} />
         <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
-        <div className="lg:pt-5 lg:pb-10 relative">
-          <div className="flex flex-col items-center justify-center 3xl:w-9/12 xl:w-10/12 mx-auto gap-2 lg:gap-4 text-gray">
-            <p className="text-3xl lg:text-6xl text-center z-50">
-              &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
-            </p>
-            <span className="lg:text-lg">Neil Gershenfeld</span>
-          </div>
-          <div className="relative flex flex-col items-center xl:absolute xl:-right-10 xl:top-20 my-5 xl:my-0">
-            <Image src="/services/Creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
-            <Image src="/services/Creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
+        <div className="relative my-5">
+          <Image className="absolute top-0 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2" src="/deco/clip.png" alt="Bulb" width={90} height={100} />
+          <div className="lg:pt-5 lg:pb-10 relative">
+            <div className="relative flex flex-col items-center justify-center 3xl:w-9/12 xl:w-10/12 mx-auto gap-2 lg:gap-4 text-gray p-20 rounded-md  bg-purple-light">
+              <p className="text-3xl lg:text-6xl text-center">
+                &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
+              </p>
+              <span className="lg:text-lg">Neil Gershenfeld</span>
+            </div>
+            <div className="relative flex flex-col items-center xl:absolute xl:-right-10 xl:top-48 my-5 xl:my-0">
+              <Image src="/services/Creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
+              <Image src="/services/Creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
+            </div>
           </div>
         </div>
 
@@ -201,7 +204,7 @@ export default function Services() {
         <div className="flex flex-col ">
           <div className="flex flex-col items-start gap-4">
             <h4 className="text-xl lg:text-3xl text-gray">
-              <span className="word-deco-s">Tools</span> I use to work
+              Tools I use to work
             </h4>
             <div className="flex flex-col items-start lg:items-center xl:my-5">
               <div className="flex flex-col items-start gap-4">

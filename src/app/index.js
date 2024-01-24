@@ -7,7 +7,7 @@ export default function Hero() {
         <Image className="hidden 2xl:flex absolute lg:top-8 3xl:bottom-56 lg:right-32 z-50 animate-wiggle" src="deco/stars.svg" width="80" height="80" alt="3D laptop" priority />
         <div className="flex flex-col gap-2">
           <span className="text-gray text-md lg:text-lg relative">
-            Hi there,<span className="word-deco-s">I&apos;m Artentii</span>
+            Hi there, <span className="word-deco-s">I&apos;m Artentii</span>
           </span>
           <h1 className="text-5xl lg:text-8xl 3xl:text-9xl text-purple font-extrabold">Web Developer & Graphic Designer</h1>
           <div className="xl:hidden w-[350px] h-[280px] relative mx-auto py-2">

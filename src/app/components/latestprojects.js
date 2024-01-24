@@ -1,24 +1,24 @@
 import Image from "next/image";
 
 const addInformationCard = [
-  { textAlt: "Image One", imgUrl: "/latest_projects/latest_project_ethseer.jpg", category: ["Web design", "Graphic design", "Brand identity"], title: "Ethseer" },
   {
-    textAlt: "Image Two",
+    textAlt: "Elusion",
+    imgUrl: "/latest_projects/latest_project_elusion.jpg",
+    category: ["Brand identity"],
+    title: "Elusion",
+  },
+  { textAlt: "Ethseer", imgUrl: "/latest_projects/latest_project_ethseer.jpg", category: ["Web design", "Graphic design", "Brand identity"], title: "Ethseer" },
+  {
+    textAlt: "Migalabs",
     imgUrl: "/latest_projects/latest_project_migalabs.jpg",
     category: ["Web design", "Graphic design", "Brand identity"],
-    title: "Migalabs",
+    title: "MigaLabs",
   },
   {
-    textAlt: "Image Three",
+    textAlt: "Starknet",
     imgUrl: "/latest_projects/latest_project_starknet.jpg",
     category: ["Brand identity"],
     title: "Starknet",
-  },
-  {
-    textAlt: "Image Four",
-    imgUrl: "/latest_projects/latest_project_artentii.jpg",
-    category: ["Web design", "Graphic design", "Brand identity"],
-    title: "Artentii",
   },
 ];
 
@@ -32,15 +32,15 @@ export default function LatestProjects() {
           {addInformationCard.map((card, index) => (
             <div
               key={index}
-              className="relative w-full group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-md lg:shadow-none lg:hover:shadow-lg hover:z-40"
+              className="relative w-full group lg:hover:scale-110 transition-all duration-300 ease-in-out rounded-md shadow-button-two border-2 border-purple hover:z-40"
             >
               <Image className="w-full object-cover rounded-md" src={card.imgUrl} alt={card.textAlt} width={400} height={400} />
-              <div className="absolute rounded-md p-10 inset-0 lg:hidden bg-gradient-to-r from-white to-white/20 lg:hover:bg-gradient-to-r transition-all duration-300  ease-in-out flex lg:group-hover:flex flex-col items-start justify-center gap-2 xl:gap-4">
-                <span className="font-semibold text-gray text-3xl xl:text-5xl">{card.title}</span>
+              <div className="absolute rounded-md p-10 inset-0 lg:hidden bg-gradient-to-r from-white to-white/10 lg:hover:bg-gradient-to-r transition-all duration-300  ease-in-out flex lg:group-hover:flex flex-col items-start justify-center gap-2 xl:gap-4">
+                <span className="font-semibold text-gray text-4xl xl:text-5xl">{card.title}</span>
                 <div className="flex flex-wrap items-center gap-1">
                   {card.category.map((item) => (
-                    <div key={item} className="px-2 bg-white border border-gray rounded-full">
-                      <span className="uppercase font-regular text-gray text-xs">{item}</span>
+                    <div key={item} className="px-4 py-2 bg-white border border-purple rounded-full">
+                      <span className="uppercase font-regular text-purple text-xs">{item}</span>
                     </div>
                   ))}
                 </div>

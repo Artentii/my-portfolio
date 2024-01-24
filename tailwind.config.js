@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Outfit", "font-mono"],
+        sans: ["Outfit"],
       },
       screens: {
         "3xl": "1920px",

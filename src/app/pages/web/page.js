@@ -8,6 +8,7 @@ const newProject = [
     text: "MigaLabs is a research group specialized in next-generation Blockchain technology, focusing on in-depth studies and solutions for Blockchain Scalability, Security, and Sustainability. They compromise technical experts in the Ethereum protocol, offering consulting services covering all technical aspects of Blockchain technology.",
     imgUrl: "/work/migalabs.png",
     txtAlt: "Migalabs",
+    web: "migalabs.io",
     link: "https://migalabs.io/",
   },
   {
@@ -17,6 +18,7 @@ const newProject = [
     text: "Ethseer.io provides information about the Beacon Chain of Ethereum. It displays the blocks being produced in real-time with a user-friendly interface and allows users to search for information in an engaging manner to understand the Blockchain.",
     imgUrl: "/work/ethseer.png",
     txtAlt: "Ethseer",
+    web: "ethseer.io",
     link: "https://ethseer.io/?network=mainnet",
   },
   {
@@ -26,6 +28,7 @@ const newProject = [
     text: "MigaLabs is a research group specialized in next-generation Blockchain technology, focusing on in-depth studies and solutions for Blockchain Scalability, Security, and Sustainability. They compromise technical experts in the Ethereum protocol, offering consulting services covering all technical aspects of Blockchain technology.",
     imgUrl: "/work/migalabs.png",
     txtAlt: "Migalabs",
+    web: "artentii.io",
     link: "https://migalabs.io/",
   },
 ];
@@ -61,14 +64,15 @@ export default function WebDesign() {
               </div>
               <div className="flex flex-row flex-wrap gap-3">
                 {card.theme.map((item) => (
-                  <div className="px-2 py-1 rounded-full border-2 border-purple bg-white/70" key={item}>
+                  <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border-2 border-purple bg-white/70" key={item}>
                     <span className="text-purple">{item}</span>
                   </div>
                 ))}
               </div>
               <p className="xl:text-lg text-gray-light">{card.text}</p>
+              <button className="bg-purple lg:hover:bg-white text-white lg:hover:text-purple border-2 border-purple shadow-button lg:hover:shadow-button-two  py-2 rounded-full transition-all duration-300 ease-in-out">See details</button>
             </div>
-            <div className="flex flex-row items-start justify-between w-full">
+            <div className="flex flex-row items-end justify-between w-full">
               <div className="flex flex-col gap-1">
                 <span className="xl:text-lg text-gray">Role</span>
                 <div className="flex flex-col text-gray-light">
@@ -77,12 +81,12 @@ export default function WebDesign() {
                   ))}
                 </div>
               </div>
-              <a href={card.link} target="_blank" className="hidden xl:flex">
+              <a href={card.link} target="_blank" className="hidden border-2 border-purple xl:flex flex-row items-center gap-2 py-2 px-4 fill-purple -translate-y-1 rounded-md shadow-button bg-white text-purple cursor-pointer ">
+                <span className="text-lg">{card.web}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  className="fill-purple bg-white xl:hover:-translate-y-1 shadow-button xl:hover:bg-white xl:hover:text-purple xl:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out rounded-md"
+                  width="30"
+                  height="30"
                   class="bi bi-arrow-up-right-square"
                   viewBox="0 0 16 16"
                 >

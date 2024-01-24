@@ -28,7 +28,7 @@ const addSocialNetwork = [
 
 export default function About() {
   return (
-    <div className="lg:m-10 mx-5 mb-5 py-5 rounded-md lg:py-10 flex flex-col items-center bg-white/70" id="about">
+    <div className="lg:m-10 mx-5 my-10 py-5 rounded-md lg:py-10 flex flex-col items-center bg-white/70" id="about">
       <h3 className="text-purple lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-purple rounded-full font-normal mb-5">About</h3>
       {/* About me information */}
       <div className=" flex flex-col items-start justify-center ">
@@ -56,10 +56,8 @@ export default function About() {
                   <div className="flex flex-col gap-1">
                     <span className="lg:text-lg text-gray">Hi there,</span>
                     <span className="text-2xl lg:text-4xl">
-                      I&apos;m <span className="word-deco-s">Marina Terentii</span>,
-                    </span>
-                    <span className="text-xl lg:text-2xl"> a graphic and web designer living in Spain.</span>
-                  </div>
+                      I&apos;m <span className="word-deco-s">Marina Terentii</span>.
+                    </span>                  </div>
                   <p className="lg:text-lg py-5 lg:py-10 text-gray">
                     My heart has always been connected to the world of art and design. To enhance my skills, I pursued a master&apos;s degree in Graphic and Web Design. I found out that my passion is
                     the ability to infuse any creations with a unique personal touch and to solve everyday problems. Not only I like bringing ideas into life but implementing them and seeing people
