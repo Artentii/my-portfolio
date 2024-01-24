@@ -3,16 +3,19 @@ module.exports = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Outfit"],
+      },
+      screens: {
+        "3xl": "1920px",
+      },
       colors: {
-        "primary-color": "#C497EA",
-        "primary-color-light": "#E9CDFF",
-        "primary-color-dark": "#A06AF8",
-        "secondary-color": "#FFEC88",
-        "secondary-color-light": "#FFF7CC",
-        "secondary-color-dark": "#ECB37E",
+        purple: "#C497EA",
+        "purple-light": "#E9CDFF",
+        "purple-dark": "#A06AF8",
         light: "#fff3e5",
         dark: "#313A41",
-        "gray-normal": "#4d5358",
+        gray: "#4d5358",
         "gray-light": "#717D96",
       },
       boxShadow: {
@@ -27,11 +30,8 @@ module.exports = {
         "image-card": "4px 4px #ffb5d0",
         section: "3px 3px #E9CDFF",
       },
-      dropShadow:{
-        testimonial: "4px 4px #C497EA"
-      },
-      screens: {
-        "3xl": "1920px",
+      dropShadow: {
+        testimonial: "4px 4px #C497EA",
       },
       animation: {
         wiggle: "wiggle 2.5s ease-in-out infinite",
@@ -42,6 +42,7 @@ module.exports = {
         swing: "swing 2s ease-in-out infinite",
         tree: "tree 2s ease-in-out infinite",
         light: "light 2s ease-in-out infinite",
+        question: "question 3s ease-in-out infinite",
       },
       keyframes: {
         wiggle: {
@@ -77,6 +78,7 @@ module.exports = {
           },
         },
         light: { "0%, 100%": { opacity: "50%" }, "50%": { opacity: "100%" } },
+        question: { "0%": { transform: " translateY(8px) rotate(-3deg)" }, "50%": { transform: "translateY(0px) rotate(-3deg)" }, "100%": { transform: "translateY(8px) rotate(-3deg)" } },
       },
       borderRadius: {
         large: "50px",
@@ -84,4 +86,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };

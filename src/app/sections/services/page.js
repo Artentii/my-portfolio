@@ -66,23 +66,23 @@ const addDigitalPresenceCards = [
 
 export default function Services() {
   return (
-    <div className="p-5 lg:p-10 m-5 lg:m-10 bg-white/70 rounded-md" id="services">
+    <div className="p-5 lg:p-10 mx-5 lg:m-10 bg-white/70 rounded-md" id="services">
       {/* <Image className="absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} /> */}
       <Image className="absolute right-20 animate-float hidden lg:block" src="/deco/stars_two.svg" alt="Bulb" width={125} height={120} />
       <div className=" flex justify-center" id="services">
-        <h3 className="text-primary-color lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-primary-color rounded-full font-normal">Services</h3>
+        <h3 className="text-purple lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-purple rounded-full font-normal">Services</h3>
       </div>
 
       <div className="">
-        <h3 className="text-4xl lg:text-8xl font-semibold text-center text-primary-color lg:w-3/4 mx-auto py-5 lg:py-10">Designing the visual, coding the functional.</h3>
+        <h3 className="text-4xl lg:text-8xl font-semibold text-center text-purple lg:w-3/4 mx-auto py-5 lg:py-10">Designing the visual, coding the functional.</h3>
 
         {/* List of services I offer */}
         <div className="flex flex-wrap gap-4 lg:gap-10 justify-center">
           {addServiceLink.map((card, index) => (
             <div className="md:w-96 3xl:w-[30rem]" key={index}>
-              <Image className="rounded-md shadow-tool-card border-2 border-primary-color bg-primary-color-light" src={card.imgUrl} alt={card.textAlt} width={400} height={400} priority />
+              <Image className="rounded-md shadow-tool-card border-2 border-purple bg-purple-light" src={card.imgUrl} alt={card.textAlt} width={400} height={400} priority />
               <div className="flex flex-col items-start gap-2 py-2">
-                <span className="text-lg lg:text-2xl font-medium text-primary-color">{card.title}</span>
+                <span className="text-lg lg:text-2xl font-medium text-purple">{card.title}</span>
                 <span className="flex flex-wrap gap-x-5">
                   {card.text.map((service, index) => (
                     <span className="flex text-gray-light" key={index}>
@@ -99,18 +99,18 @@ export default function Services() {
 
         {/* Elevate your digital presence */}
         <div>
-          <h4 className="text-2xl lg:text-4xl text-gray-normal text-center">
+          <h4 className="text-2xl lg:text-4xl text-gray text-center">
             Elevate your <span className="word-deco-s">digital presence</span>
           </h4>
-          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg text-center text-gray-light mx-auto">
+          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg text-gray-light mx-auto">
             Your digital presence serves as the digital storefront, the first point of contact for your audience. It&apos;s the online space where potential customers and visitors get their first
             glimpse of your brand, products, or services. These features will help you achieving a remarkable digital presence.
           </p>
           <div className="flex flex-col gap-4 lg:flex-row mx-auto">
             {addDigitalPresenceCards.map((card, index) => (
-              <div className="my-1 lg:my-2 lg:w-2/6 py-4 px-4 lg:px-8 rounded-xl border-2 border-primary-color bg-white/80 shadow-service-card" key={index}>
+              <div className="my-1 lg:my-2 lg:w-2/6 py-4 px-4 lg:px-8 rounded-xl border-2 border-purple bg-white/80 shadow-service-card" key={index}>
                 <Image src={card.imgUrl} alt={card.textAlt} className="mx-auto py-2" width={150} height={125} priority />
-                <p className="text-xl lg:text-2xl font-semibold pb-2 text-gray-normal">{card.title}</p>
+                <p className="text-xl lg:text-2xl font-semibold pb-2 text-gray">{card.title}</p>
                 <p className="text-gray-light">{card.text}</p>
               </div>
             ))}
@@ -122,13 +122,13 @@ export default function Services() {
         <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
         <div className="relative flex flex-col">
-          <p className="text-2xl lg:text-4xl text-center mx-auto text-gray-normal pb-10 ">
+          <p className="text-2xl lg:text-4xl text-center mx-auto text-gray">
             Steps in my <span className="word-deco-s">creative process</span>
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-primary-color-light rounded-lg text-gray-light shadow-service-card border-2 border-primary-color">
+          <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-purple-light rounded-lg text-gray-light shadow-service-card border-2 border-purple mt-5 lg:mt-10">
             <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center rounded-t-md lg:rounded-tl-md lg:rounded-tr-none p-5 lg:p-0 ">
               <div className="my-10">
-                <p className="font-bold text-lg pb-2 text-primary-color">1. Research and discovery</p>
+                <p className="font-bold text-lg pb-2 text-purple">1. Research and discovery</p>
                 <ul className="list-disc list-inside">
                   <li>Understand client needs. </li>
                   <li>Research target audience and market.</li>
@@ -138,7 +138,7 @@ export default function Services() {
             </div>
             <div className="col-span-2 lg:col-span-1 bg-white flex flex-col justify-center items-center p-5 lg:p-0">
               <div className="my-10">
-                <p className="font-bold text-lg pb-2 text-primary-color">2. Conceptualization and Ideation</p>
+                <p className="font-bold text-lg pb-2 text-purple">2. Conceptualization and Ideation</p>
                 <ul className="list-disc list-inside">
                   <li>Brainstorm ideas.</li>
                   <li>Create sketches and wireframes.</li>
@@ -148,7 +148,7 @@ export default function Services() {
             </div>
             <div className="col-span-2 lg:col-span-1 lg:row-start-2 bg-white flex flex-col justify-center items-center lg:rounded-bl-md p-5 lg:p-0">
               <div className="my-10">
-                <p className="font-bold text-lg pb-2 text-primary-color">3. Design Development</p>
+                <p className="font-bold text-lg pb-2 text-purple">3. Design Development</p>
                 <ul className="list-disc list-inside">
                   <li>Design and prototype.</li>
                   <li>Test for usability.</li>
@@ -158,7 +158,7 @@ export default function Services() {
             </div>
             <div className="col-span-2 lg:col-span-1  lg:row-start-2 bg-white flex flex-col justify-center items-center p-5 lg:p-0">
               <div className="my-10">
-                <p className="font-bold text-lg pb-2 text-primary-color">4. Presentation and Documentation</p>
+                <p className="font-bold text-lg pb-2 text-purple">4. Presentation and Documentation</p>
                 <ul className="list-disc list-inside">
                   <li>Prepare presentation materials.</li>
                   <li>Document design details.</li>
@@ -184,36 +184,36 @@ export default function Services() {
         <Image className="mx-auto hidden lg:block" src="/deco/divider.png" alt="Bulb" width={1400} height={100} />
         <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
-        <div className="lg:pt-10 lg:pb-20 relative">
-          <div className="flex flex-col items-center justify-center 3xl:w-9/12 w-10/12 mx-auto gap-2 lg:gap-4 text-gray-normal">
-            <p className="text-3xl lg:text-6xl text-center z-50">
-              &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
-            </p>
-            <span className="lg:text-lg">Neil Gershenfeld</span>
-          </div>
-          <div className="relative flex flex-col items-center xl:absolute xl:right-0 xl:top-32">
-            <Image src="/services/creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
-            <Image src="/services/creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
+        <div className="relative my-5">
+          <Image className="absolute top-0 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2" src="/deco/clip.png" alt="Bulb" width={90} height={100} />
+          <div className="lg:pt-5 lg:pb-10 relative">
+            <div className="relative flex flex-col items-center justify-center 3xl:w-9/12 xl:w-10/12 mx-auto gap-2 lg:gap-4 text-gray p-10 xl:p-20 rounded-md  bg-purple-light">
+              <p className="text-3xl lg:text-6xl text-center">
+                &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
+              </p>
+              <span className="lg:text-lg">Neil Gershenfeld</span>
+            </div>
+            <div className="relative flex flex-col items-center xl:absolute xl:-right-10 xl:top-48 my-5 xl:my-0">
+              <Image src="/services/Creative_process_1.png" alt="Girl with a brush" width={325} height={300} priority className="animate-float" />
+              <Image src="/services/Creative_process_2.png" alt="Girl with a brush" width={325} height={300} priority className="absolute top-0 " />
+            </div>
           </div>
         </div>
 
         {/* Tools I use to work */}
         <div className="flex flex-col ">
           <div className="flex flex-col items-start gap-4">
-            <h4 className="text-xl lg:text-3xl text-gray-normal pt-5 lg:pt-0">
-              <span className="word-deco-s">Tools</span> I use to work
+            <h4 className="text-xl lg:text-3xl text-gray">
+              Tools I use to work
             </h4>
-            <div className="flex flex-col items-start lg:items-center">
+            <div className="flex flex-col items-start lg:items-center xl:my-5">
               <div className="flex flex-col items-start gap-4">
                 {/* As a UX Engineer */}
                 <div className="flex flex-col">
                   <span className="lg:text-lg text-gray-light pb-4">As a Web Developer</span>
                   <div className="flex flex-wrap gap-4 justify-center">
                     {addWebDeveloperTool.map((item, index) => (
-                      <span
-                        className="py-3 px-4 w-[180px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
-                        key={index}
-                      >
+                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-purple border-purple border-2 shadow-tool-card" key={index}>
                         {item}
                       </span>
                     ))}
@@ -224,10 +224,7 @@ export default function Services() {
                   <span className="lg:text-lg text-gray-light pb-4">As a Graphic Designer</span>
                   <div className="flex flex-wrap gap-4 items-center justify-center">
                     {addGraphicDesignerTool.map((item, index) => (
-                      <span
-                        className="py-3 px-4 w-[180px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-primary-color border-primary-color border-2 shadow-tool-card"
-                        key={index}
-                      >
+                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-purple border-purple border-2 shadow-tool-card" key={index}>
                         {item}
                       </span>
                     ))}
