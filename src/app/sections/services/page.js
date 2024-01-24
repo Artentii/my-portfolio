@@ -187,7 +187,7 @@ export default function Services() {
         <div className="relative my-5">
           <Image className="absolute top-0 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2" src="/deco/clip.png" alt="Bulb" width={90} height={100} />
           <div className="lg:pt-5 lg:pb-10 relative">
-            <div className="relative flex flex-col items-center justify-center 3xl:w-9/12 xl:w-10/12 mx-auto gap-2 lg:gap-4 text-gray p-20 rounded-md  bg-purple-light">
+            <div className="relative flex flex-col items-center justify-center 3xl:w-9/12 xl:w-10/12 mx-auto gap-2 lg:gap-4 text-gray p-10 xl:p-20 rounded-md  bg-purple-light">
               <p className="text-3xl lg:text-6xl text-center">
                 &quot;Give ordinary people the right tools, and they will design and build the<b> most extraordinary things</b>.&quot;
               </p>

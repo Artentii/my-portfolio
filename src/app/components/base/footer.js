@@ -26,9 +26,9 @@ export default function Footer() {
     <div className="p-5 lg:p-10 bg-white/70 border-t-2 border-purple-light">
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
         {/* Left content */}
-        <div className="flex flex-col lg:flex-row xl:gap-2 items-center">
-          <div className="flex flex-row items-center gap-4">
-            <Image src="/footer.png" width="150" height="150" alt="3D laptop" priority />
+        <div className="flex flex-col lg:flex-row xl:gap-2 items-start">
+          <div className="flex flex-row items-start gap-4">
+            <Image src="/footer.png" width="100" height="100" alt="3D laptop" priority />
             <div className="flex flex-col items-start gap-2 xl:hidden">
               <div className="flex flex-col items-start gap-2 lg:text-lg">
                 <span className="text-lg lg:text-2xl font-semibold text-gray">Got an idea?</span>
