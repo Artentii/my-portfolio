@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeSwitcher from "../ThemeSwitcher";
 
 const sections = [
   { name: "Home", route: "/" },
@@ -51,8 +52,8 @@ export default function NavBar() {
       </Link>
       {/* List items */}
       <ul
-        className={`hidden xl:flex text-lg flex-row items-center gap-4 text-gray px-4 py-3 rounded-full  ${
-          isScrolled ? "bg-light bg-opacity-80 backdrop-blur-sm shadow-md transition-all duration-200 ease-in-out" : ""
+        className={`hidden xl:flex text-lg flex-row items-center gap-4  px-4 py-3 rounded-full  ${
+          isScrolled ? "bg-light/80 dark:bg-dark/80 backdrop-blur-sm shadow-md transition-all duration-200 ease-in-out" : ""
         }`}
       >
         {sections.map((card, index) => (
@@ -70,17 +71,11 @@ export default function NavBar() {
       <div className={`flex flex-row items-center justify-center gap-4 lg:text-lg transition-all duration-200 ease-in-out ${isScrolled ? "opacity-0" : "opacity-100"}`}>
         <a
           href="mailto:marinaterentiicebotari@gmail.com"
-          className="text-white bg-purple lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-purple lg:hover:text-purple lg:hover:border-purple lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-2 lg:py-3 rounded-md"
+          className="hidden xl:flex text-white bg-purple lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-purple lg:hover:text-purple lg:hover:border-purple lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-8 lg:px-10 py-2 lg:py-3 rounded-md"
         >
           <p>Let&apos;s talk!</p>
         </a>
-
-        {/* <div className="flex flex-row gap-2 items-center text-gray">
-          <span className="hidden xl:block">Mode</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
-            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-          </svg>
-        </div> */}
+        <ThemeSwitcher/>
       </div>
     </nav>
   );

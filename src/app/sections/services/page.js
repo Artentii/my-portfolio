@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+//Components
+import SectionLabel from "../../components/SectionLabel"
+
+
 const addServiceLink = [
   {
     title: "Brand Identity",
@@ -66,12 +70,10 @@ const addDigitalPresenceCards = [
 
 export default function Services() {
   return (
-    <div className="p-5 lg:p-10 mx-5 lg:m-10 bg-white/70 rounded-md" id="services">
+    <div className="p-5 lg:p-10 mx-5 lg:m-10 bg-white/70 dark:bg-white/30 rounded-md" id="services">
       {/* <Image className="absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} /> */}
       <Image className="absolute right-20 animate-float hidden lg:block" src="/deco/stars_two.svg" alt="Bulb" width={125} height={120} />
-      <div className=" flex justify-center" id="services">
-        <h3 className="text-purple lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-purple rounded-full font-normal">Services</h3>
-      </div>
+      <SectionLabel>Services</SectionLabel>
 
       <div className="">
         <h3 className="text-4xl lg:text-8xl font-semibold text-center text-purple lg:w-3/4 mx-auto py-5 lg:py-10">Designing the visual, coding the functional.</h3>
@@ -85,7 +87,7 @@ export default function Services() {
                 <span className="text-lg lg:text-2xl font-medium text-purple">{card.title}</span>
                 <span className="flex flex-wrap gap-x-5">
                   {card.text.map((service, index) => (
-                    <span className="flex text-gray-light" key={index}>
+                    <span className="flex" key={index}>
                       {service}
                     </span>
                   ))}
@@ -99,19 +101,19 @@ export default function Services() {
 
         {/* Elevate your digital presence */}
         <div>
-          <h4 className="text-2xl lg:text-4xl text-gray text-center">
+          <h4 className="text-2xl lg:text-4xl text-center">
             Elevate your <span className="word-deco-s">digital presence</span>
           </h4>
-          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg text-gray-light mx-auto">
+          <p className="lg:text-md lg:w-2/3 py-5 lg:py-10 lg:text-lg mx-auto">
             Your digital presence serves as the digital storefront, the first point of contact for your audience. It&apos;s the online space where potential customers and visitors get their first
             glimpse of your brand, products, or services. These features will help you achieving a remarkable digital presence.
           </p>
           <div className="flex flex-col gap-4 lg:flex-row mx-auto">
             {addDigitalPresenceCards.map((card, index) => (
-              <div className="my-1 lg:my-2 lg:w-2/6 py-4 px-4 lg:px-8 rounded-xl border-2 border-purple bg-white/80 shadow-service-card" key={index}>
+              <div className="my-1 lg:my-2 lg:w-2/6 py-4 px-4 lg:px-8 rounded-xl border-2 border-purple dark:shadow-button-two bg-white shadow-service-card" key={index}>
                 <Image src={card.imgUrl} alt={card.textAlt} className="mx-auto py-2" width={150} height={125} priority />
                 <p className="text-xl lg:text-2xl font-semibold pb-2 text-gray">{card.title}</p>
-                <p className="text-gray-light">{card.text}</p>
+                <p className="text-gray-light dark:text-gray">{card.text}</p>
               </div>
             ))}
           </div>
@@ -122,7 +124,7 @@ export default function Services() {
         <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
 
         <div className="relative flex flex-col">
-          <p className="text-2xl lg:text-4xl text-center mx-auto text-gray">
+          <p className="text-2xl lg:text-4xl text-center mx-auto">
             Steps in my <span className="word-deco-s">creative process</span>
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-2 gap-1 bg-purple-light rounded-lg text-gray-light shadow-service-card border-2 border-purple mt-5 lg:mt-10">
@@ -203,17 +205,17 @@ export default function Services() {
         {/* Tools I use to work */}
         <div className="flex flex-col ">
           <div className="flex flex-col items-start gap-4">
-            <h4 className="text-xl lg:text-3xl text-gray">
+            <h4 className="text-xl lg:text-3xl">
               Tools I use to work
             </h4>
             <div className="flex flex-col items-start lg:items-center xl:my-5">
               <div className="flex flex-col items-start gap-4">
                 {/* As a UX Engineer */}
                 <div className="flex flex-col">
-                  <span className="lg:text-lg text-gray-light pb-4">As a Web Developer</span>
+                  <span className="lg:text-lg text-gray-light dark:text-white pb-4">As a Web Developer</span>
                   <div className="flex flex-wrap gap-4 justify-center">
                     {addWebDeveloperTool.map((item, index) => (
-                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-purple border-purple border-2 shadow-tool-card" key={index}>
+                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light dark:bg-gray text-purple  border-purple border-2 shadow-tool-card" key={index}>
                         {item}
                       </span>
                     ))}
@@ -221,10 +223,10 @@ export default function Services() {
                 </div>
                 {/* As a Graphic Designer */}
                 <div className="flex flex-col">
-                  <span className="lg:text-lg text-gray-light pb-4">As a Graphic Designer</span>
+                  <span className="lg:text-lg text-gray-light dark:text-white pb-4">As a Graphic Designer</span>
                   <div className="flex flex-wrap gap-4 items-center justify-center">
                     {addGraphicDesignerTool.map((item, index) => (
-                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light text-purple border-purple border-2 shadow-tool-card" key={index}>
+                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light dark:bg-gray text-purple border-purple border-2 shadow-tool-card" key={index}>
                         {item}
                       </span>
                     ))}
