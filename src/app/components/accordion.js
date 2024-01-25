@@ -47,18 +47,18 @@ export default function Accordion() {
       {content.map((card, index) => (
         <div key={index} className="py-4 border-b-2 border-gray-light">
           <button onClick={() => toggleAccordion(index)} className="flex items-center justify-between w-full">
-            <span key={index} className="text-left lg:text-lg text-gray font-medium">
+            <span key={index} className="text-left lg:text-lg font-normal">
               {card.question}
             </span>
-            <svg className="fill-gray shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <svg className="fill-gray dark:fill-gray-light shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <rect y="7" width="16" height="2" rx="1" className={`transform origin-center transition duration-200 ease-out ${openAccordion === index && "rotate-180"}`} />
               <rect y="7" width="16" height="2" rx="1" className={`transform origin-center rotate-90 transition duration-200 ease-out ${openAccordion === index && "hidden"}`} />
             </svg>
           </button>
           <div
-            className={` grid overflow-hidden transition-all duration-300 ease-in-out text-gray-light ${openAccordion === index ? "my-2 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+            className={` grid overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === index ? "my-2 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
           >
-            <div key={index} className="overflow-hidden lg:text-lg">
+            <div key={index} className="overflow-hidden font-light lg:text-lg">
               {card.answer}
             </div>
           </div>

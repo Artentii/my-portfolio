@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
+//Components
+import SectionLabel from "../../components/SectionLabel";
+
 const addTestimonial = [
   {
     text: '"I am full of appreciation for the exceptional design work Marina did for StarkWare. Your creativity and attention to detail have truly set a new standard for our brand\'s visual representation. Your ability to listen to our needs and translate them into visually appealing designs is commendable. Your professionalism, timely delivery, and open communication throughout the process made working with you an absolute pleasure."',
@@ -26,11 +29,11 @@ export default function Testimonials() {
   return (
     <div>
       <Image className="mx-auto lg:hidden" src="/deco/divider_s.png" alt="Bulb" width={600} height={100} />
-      <div className=" bg-white/70 p-5 lg:p-10 border-y-2 border-purple-light">
+      <div className=" bg-white/70 dark:bg-white/30 p-5 lg:p-10 border-y-2 border-purple-light">
         <Image className="hidden lg:block absolute right-28 animate-heart" src="/deco/heart.svg" alt="Bulb" width={125} height={150} />
         <div className="flex flex-col">
           <div className="flex flex-col items-center lg:items-start gap-2 lg:gap-0">
-            <h3 className="text-purple lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-purple rounded-full font-normal">Testimonials</h3>
+            <SectionLabel>Testimonials</SectionLabel>
             <span className="text-4xl lg:text-6xl text-purple font-semibold">
               <span className="lg:hidden">Hear it from them</span>
               <span className="word-deco-dark-l hidden lg:block">Hear it from them</span>

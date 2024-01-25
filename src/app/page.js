@@ -7,6 +7,7 @@ import Hero from ".";
 import FAQs from "./sections/faqs/page";
 import Testimonials from "./sections/testimonials/page";
 
+
 export default function Home() {
   return (
     <main>

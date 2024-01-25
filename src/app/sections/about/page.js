@@ -2,6 +2,7 @@ import Image from "next/image";
 
 // Components
 import Gallery from "../../components/gallery";
+import SectionLabel from "../../components/SectionLabel";
 
 const addSocialNetwork = [
   {
@@ -28,8 +29,8 @@ const addSocialNetwork = [
 
 export default function About() {
   return (
-    <div className="lg:m-10 mx-5 my-10 py-5 rounded-md lg:py-10 flex flex-col items-center bg-white/70" id="about">
-      <h3 className="text-purple lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-purple rounded-full font-normal mb-5">About</h3>
+    <div className="lg:m-10 mx-5 my-10 py-5 rounded-md lg:py-10 flex flex-col items-center bg-white/70 dark:bg-white/30" id="about">
+      <SectionLabel>About</SectionLabel> 
       {/* About me information */}
       <div className=" flex flex-col items-start justify-center ">
         <div className="flex flex-col items-center justify-center">
@@ -38,12 +39,11 @@ export default function About() {
               {/* Content left */}
               <div className="relative">
                 <Image src="/about/Headshot.jpg" alt="Girl with a brush" width={300} height={300} priority className="rounded-full border-[3px] border-gray" />
-                {/* <Image src="/about/helmet_about.gif" alt="Girl with a brush" width={125} height={125} priority className="absolute top-5 left-[82px] " /> */}
                 <Image src="/about/heart_about.gif" alt="Girl with a brush" width={125} height={125} priority className="absolute top-0 right-0 rotate-12 " />
               </div>
               <div className="flex flex-row items-center gap-3 p-4">
                 {addSocialNetwork.map((card, index) => (
-                  <a key={index} href={card.URL} target="_blank" className="p-3 flex flex-row border-2 border-gray rounded-full">
+                  <a key={index} href={card.URL} target="_blank" className="p-3 flex flex-row border-2 border-gray dark:bg-gray/70 rounded-full">
                     <Image src={card.imgURL} alt={card.textAlt} className="mx-auto" width={30} height={30} priority />
                   </a>
                 ))}
@@ -54,11 +54,12 @@ export default function About() {
               <div className="flex flex-col lg:items-start items-center gap-2">
                 <div>
                   <div className="flex flex-col gap-1">
-                    <span className="lg:text-lg text-gray">Hi there,</span>
+                    <span className="lg:text-lg ">Hi there,</span>
                     <span className="text-2xl lg:text-4xl">
                       I&apos;m <span className="word-deco-s">Marina Terentii</span>.
-                    </span>                  </div>
-                  <p className="lg:text-lg py-5 lg:py-10 text-gray">
+                    </span>{" "}
+                  </div>
+                  <p className="lg:text-lg py-5 lg:py-10 ">
                     My heart has always been connected to the world of art and design. To enhance my skills, I pursued a master&apos;s degree in Graphic and Web Design. I found out that my passion is
                     the ability to infuse any creations with a unique personal touch and to solve everyday problems. Not only I like bringing ideas into life but implementing them and seeing people
                     using them also gives me joy.

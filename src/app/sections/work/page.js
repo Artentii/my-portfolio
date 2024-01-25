@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+//Components
+import SectionLabel from "../../components/SectionLabel";
+
 const addNewProjectCategory = [
   {
     number: "[01]",
@@ -43,19 +46,19 @@ const addNewProjectCategory = [
 export default function Projects() {
   return (
     <div className="px-5 lg:px-10 flex flex-col items-center gap-5 xl:my-10" id="work">
-      <h3 className="text-purple lg:text-xl bg-white/50 shadow-section px-10 py-2 border-2 border-purple rounded-full font-normal">Selected projects</h3>
+      <SectionLabel>Selected Projects</SectionLabel>
       {/* List of projects */}
       <div className="flex flex-col items-center justify-center lg:flex-row lg:flex-wrap">
         {addNewProjectCategory.map((card, index) => (
-          <div className="flex flex-col rounded-xl my-2 lg:m-4 lg:w-5/12 bg-white border-[3px] border-purple shadow-project-card" key={index}>
+          <div className="flex flex-col rounded-xl my-2 lg:m-4 lg:w-5/12 bg-white dark:bg-white/30 border-[3px] border-purple shadow-project-card" key={index}>
             <div className="flex flex-row justify-start gap-6 border-purple border-b-[3px]">
-              <span className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 border-purple border-r-[3px] text-gray-light ">{card.number}</span>
-              <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 text-gray-light">{card.category}</p>
+              <span className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 border-purple border-r-[3px]">{card.number}</span>
+              <p className="text-2xl lg:text-4xl font-semibold p-5 lg:p-8 ">{card.category}</p>
             </div>
             <div className="flex flex-col lg:flex-row items-center gap-5 p-5 lg:p-10">
               <Image src={card.imgUrl} alt={card.textAlt} width={150} height={150} priority />
               <div className="flex flex-col items-center lg:items-start gap-5">
-                <p className=" text-gray-light">{card.text}</p>
+                <p className=" text-gray-light dark:text-white">{card.text}</p>
                 <Link href={card.path} target="_blank">
                   <button className="text-white text-lg bg-purple lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-purple lg:hover:text-purple lg:hover:border-purple lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
                     {card.button}

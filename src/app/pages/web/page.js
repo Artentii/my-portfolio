@@ -29,7 +29,7 @@ const newProject = [
     imgUrl: "/work/artentii.png",
     txtAlt: "Artentii",
     web: "artentii.io",
-    link: "https://migalabs.io/",
+    link: "https://www.artentii.com/",
   },
 ];
 
@@ -38,11 +38,11 @@ export default function WebDesign() {
     <main className="p-5 xl:p-10 my-5">
       <h1 className="text-5xl xl:text-7xl text-purple font-bold text-center">Web Design</h1>
       {newProject.map((card, index) => (
-        <div className="bg-white p-5 xl:p-10 my-5 flex flex-col gap-2 xl:flex-row rounded-md border-2 border-purple shadow-button" key={index}>
+        <div className="bg-white dark:bg-white/30 p-5 xl:p-10 my-5 flex flex-col gap-2 xl:flex-row rounded-md border-2 border-purple shadow-button" key={index}>
           <div className="flex flex-col items-start justify-between gap-5">
             <div className="flex flex-col gap-5">
               <div className="flex flex-row justify-between">
-                <span className="text-4xl xl:text-6xl font-semibold text-gray">{card.title}</span>
+                <span className="text-4xl xl:text-6xl font-semibold">{card.title}</span>
                 <a href={card.link} target="_blank" className="flex xl:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" className="fill-purple bg-white shadow-button rounded-md" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                     <path
@@ -54,23 +54,23 @@ export default function WebDesign() {
               </div>
               <div className="flex flex-row flex-wrap gap-3">
                 {card.theme.map((item) => (
-                  <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border-2 border-purple bg-white/70" key={item}>
+                  <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border-2 border-purple dark:bg-white" key={item}>
                     <span className="text-purple">{item}</span>
                   </div>
                 ))}
               </div>
-              <p className="xl:text-lg text-gray-light">{card.text}</p>
+              <p className="xl:text-lg">{card.text}</p>
               <div className="relative flex flex-col">
                 <button className="bg-purple text-white border-purple shadow-button  py-2 rounded-full">See details</button>
                 <div className="absolute -top-2 right-0 bg-white border border-gray rounded-full flex flex-col py-1 px-3">
-                  <span className="uppercase text-xs">Soon</span>
+                  <span className="uppercase text-xs text-gray">Soon</span>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-end justify-between w-full">
               <div className="flex flex-col gap-1">
-                <span className="xl:text-lg text-gray">Role</span>
-                <div className="flex flex-col text-gray-light">
+                <span className="xl:text-lg ">Role</span>
+                <div className="flex flex-col ">
                   {card.role.map((item) => (
                     <span key={item}>{item}</span>
                   ))}

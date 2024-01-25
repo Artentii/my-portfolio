@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="flex flex-col items-center lg:items-start gap-5 lg:gap-10 px-5 pb-5 py-5 xl:p-20 3xl:p-28 relative">
         <Image className="hidden 2xl:flex absolute lg:top-8 3xl:bottom-56 lg:right-32 z-50 animate-wiggle" src="deco/stars.svg" width="80" height="80" alt="3D laptop" priority />
         <div className="flex flex-col gap-2">
-          <span className="text-gray text-md lg:text-lg relative">
+          <span className=" text-md lg:text-lg relative">
             Hi there, <span className="word-deco-s">I&apos;m Artentii</span>
           </span>
           <h1 className="text-5xl lg:text-8xl 3xl:text-9xl text-purple font-extrabold">Web Developer & Graphic Designer</h1>
@@ -24,7 +24,7 @@ export default function Hero() {
             <Image className="absolute z-50" src="/hero/hero_dog.png" width="500" height="500" alt="3D laptop" priority />
             <Image className="absolute animate-tail z-40" src="/hero/hero_tail.png" width="500" height="500" alt="3D laptop" priority />
           </div>
-          <p className="text-gray lg:text-lg hidden xl:block">
+          <p className=" lg:text-lg hidden xl:block">
             I am an enthusiastic web developer with a solid background in graphic and web design. My passion lies in turning ideas into user-friendly experiences that not only engage users but also
             enrich their lives in various ways.
           </p>
@@ -32,7 +32,7 @@ export default function Hero() {
 
         {/* Buttons section */}
         <div className="flex flex-col items-start gap-2 lg:gap-4 w-full 3xl:py-5">
-          <p className="text-gray text-center lg:text-left text-lg">How can I help you?</p>
+          <p className=" text-center lg:text-left text-lg">How can I help you?</p>
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 w-full">
             <a
               href="mailto:marinaterentiicebotari@gmail.com"
