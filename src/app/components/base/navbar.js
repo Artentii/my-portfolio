@@ -51,7 +51,7 @@ export default function NavBar() {
       </Link>
       {/* List items */}
       <ul
-        className={`hidden md:block lg:flex text-lg flex-row items-center gap-4 text-gray px-4 py-3 rounded-full ${
+        className={`hidden xl:flex text-lg flex-row items-center gap-4 text-gray px-4 py-3 rounded-full  ${
           isScrolled ? "bg-light bg-opacity-80 backdrop-blur-sm shadow-md transition-all duration-200 ease-in-out" : ""
         }`}
       >
