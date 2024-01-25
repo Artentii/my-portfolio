@@ -55,7 +55,7 @@ export default function Footer() {
               <span className="text-lg lg:text-2xl font-semibold">Got an idea?</span>
               <a className="flex flex-row items-center gap-2 cursor-pointer pt-2" href="mailto:marinaterentiicebotari@gmail.com">
                 <span>Let&apos;s work together!</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="dark:fill-white" class="bi bi-send" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-purple-light" class="bi bi-send" viewBox="0 0 16 16">
                   <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
                 </svg>
               </a>
