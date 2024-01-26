@@ -25,15 +25,6 @@ const addNewProjectCategory = [
   },
   {
     number: "[03]",
-    category: "Brand Identity",
-    imgUrl: "/projects/shop.gif",
-    textAlt: "Image one",
-    text: "From custom apparel with your logo to branded merchandise reflecting your unique identity, I'm here to help you make a statement. My designs enhance brand recognition and engage your target audience.",
-    button: "See Projects",
-    path: "/pages/brand-identity",
-  },
-  {
-    number: "[04]",
     category: "Art Gallery",
     imgUrl: "/projects/art-gallery.gif",
     textAlt: "Image one",
