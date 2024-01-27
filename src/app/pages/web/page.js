@@ -61,12 +61,12 @@ export default function WebDesign() {
               <div className="flex flex-row justify-between">
                 <span className="text-4xl xl:text-6xl font-semibold text-purple dark:text-purple-light">{card.title}</span>
                 <a href={card.link} target="_blank" className="flex xl:hidden">
-                  <webp xmlns="http://www.w3.org/2000/webp" width="35" height="35" className="fill-purple bg-white shadow-button rounded-md" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/webp" width="35" height="35" className="fill-purple bg-white shadow-button rounded-md" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                     <path
                       fill-rule="evenodd"
                       d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"
                     />
-                  </webp>
+                  </svg>
                 </a>
               </div>
               <p className="xl:text-lg font-light">{card.text}</p>
@@ -94,12 +94,12 @@ export default function WebDesign() {
                 className="hidden border-2 border-purple xl:flex flex-row items-center gap-2 py-2 px-4 fill-purple -translate-y-1 rounded-md shadow-button bg-white text-purple cursor-pointer "
               >
                 <span className="text-lg">{card.web}</span>
-                <webp xmlns="http://www.w3.org/2000/webp" width="30" height="30" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/webp" width="30" height="30" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                   <path
                     fill-rule="evenodd"
                     d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"
                   />
-                </webp>
+                </svg>
               </a>
             </div>
           </div>
