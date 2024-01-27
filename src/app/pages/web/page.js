@@ -51,8 +51,15 @@ export default function WebDesign() {
         <div className="bg-white dark:bg-white/30 p-3 xl:p-10 my-5 flex flex-col gap-5 xl:flex-row rounded-md border-2 border-purple shadow-button" key={index}>
           <div className="flex flex-col items-start justify-between gap-5">
             <div className="flex flex-col gap-5">
+              <div className="flex flex-row flex-wrap gap-3">
+                {card.theme.map((item) => (
+                  <div className="px-4 py-1 rounded-full border xl:border-2 border-purple dark:bg-white" key={item}>
+                    <span className="text-purple">{item}</span>
+                  </div>
+                ))}
+              </div>
               <div className="flex flex-row justify-between">
-                <span className="text-4xl xl:text-6xl font-semibold text-purple dark:text-white">{card.title}</span>
+                <span className="text-4xl xl:text-6xl font-semibold text-purple dark:text-purple-light">{card.title}</span>
                 <a href={card.link} target="_blank" className="flex xl:hidden">
                   <webp xmlns="http://www.w3.org/2000/webp" width="35" height="35" className="fill-purple bg-white shadow-button rounded-md" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                     <path
@@ -61,13 +68,6 @@ export default function WebDesign() {
                     />
                   </webp>
                 </a>
-              </div>
-              <div className="flex flex-row flex-wrap gap-3">
-                {card.theme.map((item) => (
-                  <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border xl:border-2 border-purple dark:border-purple-light dark:bg-white" key={item}>
-                    <span className="text-purple dark:text-purple-light">{item}</span>
-                  </div>
-                ))}
               </div>
               <p className="xl:text-lg font-light">{card.text}</p>
               <div className="relative flex flex-col">
@@ -82,7 +82,9 @@ export default function WebDesign() {
                 <span className="xl:text-lg ">Role</span>
                 <div className="flex flex-col ">
                   {card.role.map((item) => (
-                    <span className="font-light" key={item}>{item}</span>
+                    <span className="font-light" key={item}>
+                      {item}
+                    </span>
                   ))}
                 </div>
               </div>

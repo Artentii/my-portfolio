@@ -7,7 +7,7 @@ const newProject = [
     theme: ["Brand Identity"],
     tools: ["Illustrator", "Figma", "Midjourney", "Photoshop"],
     title: "Elusion",
-    text: "Brief explanation goes here",
+    text: "Elusion is a start-up that wants to help businesses create tax-deductible losses. They want to help non-technical users seeking a simple platform for optimizing taxes through the sale and purchase of NFTs. The visual identity of the brand connects nature with technology, a modern, clean, and minimal design.",
   },
   {
     imgUrl: "/work/graphic/migalabs.webp",
@@ -15,7 +15,7 @@ const newProject = [
     theme: ["Brand Identity"],
     tools: ["Illustrator", "Photoshop"],
     title: "MigaLabs",
-    text: "Brief explanation goes here",
+    text: "MigaLabs is a research group specialized in next-generation Blockchain technology, focusing on in-depth studies and solutions for Blockchain Scalability, Security, and Sustainability. 'Miga' comes from 'hormiga' which means ant, hence the logo. ",
   },
   {
     imgUrl: "/work/graphic/starknet.webp",
@@ -23,7 +23,7 @@ const newProject = [
     theme: ["Merch"],
     tools: ["Illustrator", "Photoshop"],
     title: "Starknet",
-    text: "Brief explanation goes here",
+    text: "Starknet is a ZK rollup that provides unlimited scale while retaining Ethereum's security and decentralization. As a commission, I was asked to do two t-shirt designs and a pair of socks using the three brand's color palette.",
   },
   {
     imgUrl: "/work/graphic/prompt-fighters.webp",
@@ -31,7 +31,7 @@ const newProject = [
     theme: ["Brand Identity"],
     tools: ["Illustrator", "Photoshop"],
     title: "Prompt Fighters!",
-    text: "Brief explanation goes here",
+    text: "Prompt Fighters! is a decentralized figthing game. It consists of creating your own unique character as an NFT using your imagination (a fill up template prompt which will generate your character) to challenge and bet money against other people's creations.",
   },
   {
     imgUrl: "/work/graphic/music.webp",
@@ -39,7 +39,7 @@ const newProject = [
     theme: ["Poster Design"],
     tools: ["Illustrator", "Photoshop"],
     title: "Jazz Magnetism",
-    text: "Brief explanation goes here",
+    text: "Poster design for my Graphic Design course.",
   },
   {
     imgUrl: "/work/graphic/flowers.webp",
@@ -47,7 +47,7 @@ const newProject = [
     theme: ["Poster Design"],
     tools: ["Illustrator", "Photoshop"],
     title: "Phsychedelic Music Fest",
-    text: "Brief explanation goes here",
+    text: "Poster design for my Graphic Design course.",
   },
   {
     imgUrl: "/work/graphic/nike-paint.webp",
@@ -55,7 +55,7 @@ const newProject = [
     theme: ["Illustration", "Merch", "Poster Design"],
     tools: ["Illustrator", "Photoshop"],
     title: "Nike 01",
-    text: "Brief explanation goes here",
+    text: "Poster design for my Graphic Design course.",
   },
   {
     imgUrl: "/work/graphic/nike-slime.webp",
@@ -63,7 +63,7 @@ const newProject = [
     theme: ["Illustration", "Poster Design"],
     tools: ["Illustrator", "Photoshop"],
     title: "Nike 02",
-    text: "Brief explanation goes here",
+    text: "Poster design for my Graphic Design course.",
   },
   {
     imgUrl: "/work/graphic/toyota.webp",
@@ -71,7 +71,7 @@ const newProject = [
     theme: ["Illustration", "Merch", "Poster Design"],
     tools: ["Illustrator", "Photoshop"],
     title: "Toyota MR2",
-    text: "Brief explanation goes here",
+    text: "Poster design for my Graphic Design course.",
   },
   {
     imgUrl: "/work/graphic/interstellar.webp",
@@ -79,7 +79,7 @@ const newProject = [
     theme: ["Illustration", "Poster Design"],
     tools: ["Illustrator", "Photoshop"],
     title: "Interstellar",
-    text: "Brief explanation goes here",
+    text: "Poster design for my Graphic Design course.",
   },
 ];
 
@@ -92,12 +92,12 @@ export default function GraphicDesign() {
           <div className="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-3">
             <div className="flex flex-row flex-wrap gap-3">
               {card.theme.map((item) => (
-                <span key={item} className="text-purple dark:text-purple-light text-xl">{item}</span>
+                <span key={item} className="text-purple dark:text-purple-light xl:text-xl">{item}</span>
               ))}
             </div>
             <div className="flex flex-wrap xl:flex-row items-end gap-3">
               {card.tools.map((item) => (
-                <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border xl:border-2 border-purple dark:bg-white" key={item}>
+                <div className="px-4 py-1 rounded-full border xl:border-2 border-purple dark:bg-white" key={item}>
                   <span className="text-purple">{item}</span>
                 </div>
               ))}
