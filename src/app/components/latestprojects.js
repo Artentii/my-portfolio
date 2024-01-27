@@ -3,16 +3,16 @@ import Image from "next/image";
 const addInformationCard = [
   {
     textAlt: "Elusion",
-    imgUrl: "/latest_projects/latest_project_elusion.jpg",
+    imgUrl: "/latest_projects/latest_project_elusion.webp",
   },
-  { textAlt: "Ethseer", imgUrl: "/latest_projects/latest_project_ethseer.jpg" },
+  { textAlt: "Ethseer", imgUrl: "/latest_projects/latest_project_ethseer.webp" },
   {
     textAlt: "Migalabs",
-    imgUrl: "/latest_projects/latest_project_migalabs.jpg",
+    imgUrl: "/latest_projects/latest_project_migalabs.webp",
   },
   {
     textAlt: "Starknet",
-    imgUrl: "/latest_projects/latest_project_starknet.jpg",
+    imgUrl: "/latest_projects/latest_project_starknet.webp",
   },
 ];
 
