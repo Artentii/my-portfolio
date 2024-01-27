@@ -45,10 +45,10 @@ const newProject = [
 
 export default function WebDesign() {
   return (
-    <main className="p-5 xl:p-10 my-5">
+    <main className="p-3 xl:p-10 my-5">
       <h1 className="text-5xl xl:text-7xl text-purple font-bold text-center">Web Design</h1>
       {newProject.map((card, index) => (
-        <div className="bg-white dark:bg-white/30 p-5 xl:p-10 my-5 flex flex-col gap-5 xl:flex-row rounded-md border-2 border-purple shadow-button" key={index}>
+        <div className="bg-white dark:bg-white/30 p-3 xl:p-10 my-5 flex flex-col gap-5 xl:flex-row rounded-md border-2 border-purple shadow-button" key={index}>
           <div className="flex flex-col items-start justify-between gap-5">
             <div className="flex flex-col gap-5">
               <div className="flex flex-row justify-between">
@@ -64,8 +64,8 @@ export default function WebDesign() {
               </div>
               <div className="flex flex-row flex-wrap gap-3">
                 {card.theme.map((item) => (
-                  <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border-2 border-purple dark:bg-white" key={item}>
-                    <span className="text-purple">{item}</span>
+                  <div className="px-2 py-1 xl:px-4 xl:py-2 rounded-full border xl:border-2 border-purple dark:border-purple-light dark:bg-white" key={item}>
+                    <span className="text-purple dark:text-purple-light">{item}</span>
                   </div>
                 ))}
               </div>
@@ -82,7 +82,7 @@ export default function WebDesign() {
                 <span className="xl:text-lg ">Role</span>
                 <div className="flex flex-col ">
                   {card.role.map((item) => (
-                    <span key={item}>{item}</span>
+                    <span className="font-light" key={item}>{item}</span>
                   ))}
                 </div>
               </div>
