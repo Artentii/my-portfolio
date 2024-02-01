@@ -1,6 +1,8 @@
 import { Outfit } from "next/font/google";
 import Providers from "./providers";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import { Analytics } from '@vercel/analytics/react';
+
 
 // Components
 import NavBar from "./components/base/navbar";
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
