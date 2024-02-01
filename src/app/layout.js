@@ -1,8 +1,7 @@
 import { Outfit } from "next/font/google";
 import Providers from "./providers";
 import ThemeSwitcher from "./components/ThemeSwitcher";
-import { Analytics } from '@vercel/analytics/react';
-
+import { Analytics } from "@vercel/analytics/react";
 
 // Components
 import NavBar from "./components/base/navbar";
