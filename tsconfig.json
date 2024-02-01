@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/components/latestprojects.js", "src/app/sitemap.ts"  ],
+, "src/app/components/latestprojects.js"  ],
   "exclude": [
     "node_modules"
   ]
