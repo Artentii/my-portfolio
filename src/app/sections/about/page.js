@@ -43,7 +43,7 @@ export default function About() {
               </div>
               <div className="flex flex-row items-center gap-3 p-4">
                 {addSocialNetwork.map((card, index) => (
-                  <a key={index} href={card.URL} target="_blank" className="p-3 flex flex-row border-2 border-gray dark:bg-gray/70 rounded-full">
+                  <a key={index} href={card.URL} target="_blank" className="p-3 flex flex-row border-2 border-gray bg-purple-light/50 dark:bg-white hover:bg-white hover:dark:bg-purple-light rounded-full transition-all duration-300 ease-in-out">
                     <Image src={card.imgURL} alt={card.textAlt} className="mx-auto" width={30} height={30} priority />
                   </a>
                 ))}
@@ -65,9 +65,9 @@ export default function About() {
                     using them also gives me joy.
                   </p>
                 </div>
-                <button className="text-white text-lg bg-purple lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-purple lg:hover:text-purple lg:hover:border-purple lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
+                <a href="mailto:marinaterentiicebotari@gmail.com" className="text-white text-lg bg-purple lg:hover:-translate-y-1 shadow-button lg:hover:bg-white border-2 border-purple lg:hover:text-purple lg:hover:border-purple lg:hover:shadow-button-two cursor-pointer transition-all duration-300 ease-in-out px-10 py-3 rounded-md">
                   <span>Let&apos;s start a project!</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
