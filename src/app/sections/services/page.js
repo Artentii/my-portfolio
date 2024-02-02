@@ -215,7 +215,7 @@ export default function Services() {
                   <span className="lg:text-lg text-gray-light dark:text-white pb-4">As a Web Developer</span>
                   <div className="flex flex-wrap gap-4 justify-center">
                     {addWebDeveloperTool.map((item, index) => (
-                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light dark:bg-gray text-purple  border-purple border-2 shadow-tool-card" key={index}>
+                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light bg-purple-light/40 dark:bg-white/80 lg:hover:bg-white text-purple  border-purple border-2 shadow-tool-card transition-all duration-300 ease-in-out" key={index}>
                         {item}
                       </span>
                     ))}
@@ -226,7 +226,7 @@ export default function Services() {
                   <span className="lg:text-lg text-gray-light dark:text-white pb-4">As a Graphic Designer</span>
                   <div className="flex flex-wrap gap-4 items-center justify-center">
                     {addGraphicDesignerTool.map((item, index) => (
-                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light dark:bg-gray text-purple border-purple border-2 shadow-tool-card" key={index}>
+                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light bg-purple-light/40 dark:bg-white/80 lg:hover:bg-white text-purple  border-purple border-2 shadow-tool-card transition-all duration-300 ease-in-out" key={index}>
                         {item}
                       </span>
                     ))}

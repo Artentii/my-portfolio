@@ -25,19 +25,17 @@ export default function Footer() {
     <div className="p-5 lg:p-10 bg-white/70 dark:bg-white/30 border-t-2 border-purple-light">
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
         {/* Left content */}
-        <div className="flex flex-col lg:flex-row xl:gap-2 items-start">
-          <div className="flex flex-row items-start gap-4">
+        <div className="flex flex-col lg:flex-row lg:gap-8 items-start">
+          <div className="flex flex-row items-center gap-4">
             <Image src="/footer.png" width="100" height="100" alt="3D laptop" priority />
-            <div className="flex flex-col items-start gap-2 xl:hidden">
-              <div className="flex flex-col items-start gap-2 lg:text-lg">
-                <span className="text-lg lg:text-2xl font-semibold">Got an idea?</span>
-                <hr className="h-0.5 rounded-full w-full bg-purple-light"></hr>
-                <a className="flex flex-row items-center gap-2 cursor-pointer" href="mailto:marinaterentiicebotari@gmail.com">
-                  <span className="">Let&apos;s work together!</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="fill-gray-light dark:fill-white" class="bi bi-send" viewBox="0 0 16 16">
-                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-                  </svg>
-                </a>
+            <div className="flex xl:hidden">
+              <div className="flex flex-col items-start gap-2 ">
+                <div className="flex flex-col items-start gap-2 lg:text-lg divide-y-2 divide-purple-light">
+                  <span className="text-lg lg:text-2xl font-semibold">Got an idea?</span>
+                  <a className="flex flex-row items-center gap-2 cursor-pointer pt-2" href="mailto:marinaterentiicebotari@gmail.com">
+                    <span>Let&apos;s work together!</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -55,7 +53,6 @@ export default function Footer() {
               <span className="text-lg lg:text-2xl font-semibold">Got an idea?</span>
               <a className="flex flex-row items-center gap-2 cursor-pointer pt-2" href="mailto:marinaterentiicebotari@gmail.com">
                 <span>Let&apos;s work together!</span>
-                
               </a>
             </div>
           </div>
@@ -65,7 +62,7 @@ export default function Footer() {
         <div className="flex flex-wrap gap-5 lg:gap-10">
           {/* Social Media */}
           <div className="flex flex-col gap-2">
-            <p className="text-lg lg:text-2xl font-semibold text-razzmataz text-purple">Say hello!</p>
+            <p className="text-lg lg:text-2xl font-semibold text-purple">Say hello!</p>
             {addSocialNetworkItem.map((card, index) => (
               <a key={index} href={card.URL} target="_blank">
                 <span className="hover:underline hover:underline-offset-4 transition-all duration-300 ease-in-out">{card.title}</span>{" "}

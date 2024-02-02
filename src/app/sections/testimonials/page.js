@@ -44,7 +44,7 @@ export default function Testimonials() {
           {addTestimonial.map((card, index) => (
             <div key={index} className="flex flex-col gap-4">
               <div>
-                <p className="p-5 lg:p-10 bg-purple-light shadow-tool-card rounded-md text-gray leading-7 lg:text-lg">{card.text}</p>
+                <p className="p-5 lg:p-10 bg-purple-light shadow-tool-card rounded-md text-gray leading-7 lg:text-lg  2xl:h-[200px]">{card.text}</p>
                 <Image className="relative top-auto left-10 drop-shadow-testimonial" src="/testimonials/testimonial.svg" alt="Questions" width={50} height={50} />
               </div>
               <div className="flex flex-row gap-4">
