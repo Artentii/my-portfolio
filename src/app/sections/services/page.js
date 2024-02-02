@@ -43,7 +43,7 @@ const addServiceLink = [
   },
 ];
 
-const addWebDeveloperTool = ["Figma", "HTML", "CSS", "Javascript", "Next.js", "Chat GPT"];
+const addWebDeveloperTool = ["Figma", "HTML", "CSS", "Javascript", "Next.js", "ChatGPT"];
 
 const addGraphicDesignerTool = ["Adobe Suite", "Midjourney", "Notion", "Blender"];
 
