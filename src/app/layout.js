@@ -1,11 +1,11 @@
 import { Outfit } from "next/font/google";
 import Providers from "./providers";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 import { Analytics } from "@vercel/analytics/react";
 
 // Components
 import NavBar from "./components/base/navbar";
 import Footer from "./components/base/footer";
+import BackToTopButton from "./components/BackToTopButton";
 
 import "./globals.css";
 
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className="bg-light dark:bg-dark text-gray dark:text-white">
         <Providers>
           <div className="noise"></div>
+          <BackToTopButton/>
           <NavBar />
           <main>{children}</main>
           <Footer />
