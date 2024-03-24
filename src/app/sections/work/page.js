@@ -32,6 +32,15 @@ const addNewProjectCategory = [
     button: "See Projects",
     path: "/pages/art-gallery",
   },
+  {
+    number: "[04]",
+    category: "Freebies",
+    imgUrl: "/projects/document.gif",
+    textAlt: "Image one",
+    text: "Exclusive freebies designed by me to help you achieving all your goals. I share some templates that helped me becoming a more consistent and productive person while enjoying new habits I included in my life.",
+    button: "See Freebies",
+    path: "/pages/freebies",
+  },
 ];
 
 export default function Projects() {

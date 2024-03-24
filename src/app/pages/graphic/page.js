@@ -7,7 +7,7 @@ const newProject = [
     theme: ["Brand Identity"],
     tools: ["Illustrator", "Figma", "Midjourney", "Photoshop"],
     title: "Elusion",
-    text: "Elusion is a start-up that wants to help businesses create tax-deductible losses. They want to help non-technical users seeking a simple platform for optimizing taxes through the sale and purchase of NFTs. The visual identity of the brand connects nature with technology, a modern, clean, and minimal design.",
+    text: "Elusion is a modern and community-driven start-up. They want to help non-technical users seeking a simple platform to sell and purchase of NFTs. The visual identity of the brand connects nature with technology, a modern, clean, and minimal design.",
   },
   {
     imgUrl: "/work/graphic/migalabs.webp",
