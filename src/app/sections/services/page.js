@@ -2,6 +2,8 @@ import Image from "next/image";
 
 //Components
 import SectionLabel from "../../components/SectionLabel"
+import { link } from "fs";
+import { url } from "inspector";
 
 
 const addServiceLink = [
@@ -45,7 +47,8 @@ const addServiceLink = [
 
 const addWebDeveloperTool = ["Figma", "HTML", "CSS", "Javascript", "Next.js", "ChatGPT"];
 
-const addGraphicDesignerTool = ["Adobe Suite", "Midjourney", "Notion", "Blender"];
+const addGraphicDesignerTool = [{title: "Adobe Suite", url: "https://www.adobe.com/es/creativecloud.html?gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7pZkzI8CUDE262AWO4uFiOPlt0VNn8zDsDgLoL_-NbtxlIdzHXdP40aAq3HEALw_wcB&mv=search&mv=search&mv2=paidsearch&sdid=D8F91K7Y&ef_id=Cj0KCQiAi_G5BhDXARIsAN5SX7pZkzI8CUDE262AWO4uFiOPlt0VNn8zDsDgLoL_-NbtxlIdzHXdP40aAq3HEALw_wcB:G:s&s_kwcid=AL!3085!3!474067433653!e!!g!!adobe%20creative%20cloud!1445901594!56657212496&gad_source=1"
+}, {title: "Midjourney", url: "https://www.midjourney.com/home"}, {title: "Notion", url: "https://www.notion.so/templates/category/personal-home"}, {title: "Blender", url:"https://www.blender.org/"}, {title: "Pacdora", url:"https://www.pacdora.com/es?utm_source=googleads&utm_medium=search&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7qg-dd8QTrwmJt5lfqUxHgXmbQckOMYeVZTr2F3NvXHi9ykH3bWIuIaAmH1EALw_wcB"}];
 
 const addDigitalPresenceCards = [
   {
@@ -226,9 +229,7 @@ export default function Services() {
                   <span className="lg:text-lg text-gray-light dark:text-white pb-4">As a Graphic Designer</span>
                   <div className="flex flex-wrap gap-4 items-center justify-center">
                     {addGraphicDesignerTool.map((item, index) => (
-                      <span className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light bg-purple-light/40 dark:bg-white/80 lg:hover:bg-white text-purple  border-purple border-2 shadow-tool-card transition-all duration-300 ease-in-out" key={index}>
-                        {item}
-                      </span>
+                      <a className="py-3 px-4 w-[125px] lg:w-[200px] 3xl:w-[250px] rounded-md text-center lg:text-xl font-light bg-purple-light/40 dark:bg-white/80 lg:hover:bg-white text-purple  border-purple border-2 shadow-tool-card transition-all duration-300 ease-in-out" key={index} href={item.url} target="_blank">{item.title}</a>
                     ))}
                   </div>
                 </div>
